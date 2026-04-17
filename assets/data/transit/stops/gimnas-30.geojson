@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111254,
+          41.333485
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.910",
+        "stop_name": "Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.119037,
+          41.334345
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1617.684710",
+        "stop_name": "Carrer número 4 - Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.117334,
+          41.334052
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1643.675922",
+        "stop_name": "Mercabarna - Mercat del Peix"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.116508,
+          41.345188
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2189.694350",
+        "stop_name": "Motors - Av Granvia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.118465,
+          41.334797
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2811.695889",
+        "stop_name": "Zona Franca - Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111457,
+          41.333829
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2812.697822",
+        "stop_name": "Carrer K - Carrer número 40"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111608,
+          41.333579
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2828.697820",
+        "stop_name": "Carrer K"
+      }
+    }
+  ]
+}

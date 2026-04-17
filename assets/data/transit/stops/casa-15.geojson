@@ -1,0 +1,258 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.110917,
+          41.350975
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#CE1126",
+            "long_name": "Hospital de Bellvitge - Fondo",
+            "route_type": 1,
+            "short_name": "L1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.112",
+        "stop_name": "Bellvitge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.102632,
+          41.358553
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#CE1126",
+            "long_name": "Hospital de Bellvitge - Fondo",
+            "route_type": 1,
+            "short_name": "L1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.113",
+        "stop_name": "Av. Carrilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.099749,
+          41.36409
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#CE1126",
+            "long_name": "Hospital de Bellvitge - Fondo",
+            "route_type": 1,
+            "short_name": "L1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.114",
+        "stop_name": "Rambla Just Oliveras"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.102758,
+          41.367694
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#CE1126",
+            "long_name": "Hospital de Bellvitge - Fondo",
+            "route_type": 1,
+            "short_name": "L1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.115",
+        "stop_name": "Can Serra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11121,
+          41.349912
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.581.690941",
+        "stop_name": "Parc de Bellvitge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111914,
+          41.349755
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.647.675738",
+        "stop_name": "Rambla Marina - Av Granvia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.110198,
+          41.35162
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1613.690930",
+        "stop_name": "Metro Bellvitge Rambla Marina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.110852,
+          41.351506
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2137.696952",
+        "stop_name": "Metro Bellvitge Rambla Marina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.103856,
+          41.356085
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2517.699515",
+        "stop_name": "Institut Mercè Rodoreda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.103348,
+          41.357725
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3462.694341",
+        "stop_name": "Rambla Marina - Av Carrilet - Final de trajecte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.104198,
+          41.356399
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3686.694652",
+        "stop_name": "CUAP Pura Fernández"
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revent – A prop teu</title>
+  <meta name="description" content="Descobreix esdeveniments al teu voltant en funció de la teva ubicació i el temps disponible.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF6B00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+
+  <link rel="stylesheet" href="assets/css/explore.css" />
+  <link rel="stylesheet" href="assets/css/core.css" />
+</head>
+<body>
+
+<div id="app-new">
+
+  <!-- Full-screen map -->
+  <div id="map-container">
+    <div id="map"></div>
+
+    <div id="map-loading">
+      <div class="loading-spinner"></div>
+      <p>Carregant mapa…</p>
+    </div>
+  </div>
+
+  <a id="map-back-btn" href="index.html" aria-label="Tornar al menú de demos">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Demos
+  </a>
+
+  <!-- Sidebar: always visible in nearme -->
+  <aside id="sidebar" class="hidden-sidebar">
+    <div id="sidebar-inner">
+      <!-- Rendered by nearme/main.js -->
+    </div>
+  </aside>
+
+  <!-- Hover Card (same structure as explore, used on marker hover) -->
+  <div id="merchant-card" class="merchant-card hidden">
+    <div class="card-photo" id="card-photo"></div>
+    <div class="card-content">
+      <div class="card-badge" id="card-badge"></div>
+      <h3 class="card-name" id="card-name"></h3>
+      <div class="card-divider"></div>
+      <p class="card-dish" id="card-dish"></p>
+      <p class="card-address" id="card-address"></p>
+      <p class="card-status" id="card-status"></p>
+      <div class="card-tags" id="card-tags"></div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" id="card-btn-detail">Veure més</button>
+        <button class="btn btn-primary" id="card-btn-route">Ruta</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Drawer (shared with explore) -->
+  <div id="detail-drawer" class="detail-drawer detail-drawer--hidden">
+    <button class="detail-drawer-close" id="detail-drawer-close" aria-label="Tancar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6 6 18M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <div class="detail-hero" id="detail-photo">
+      <div class="detail-hero-placeholder"><i data-lucide="image" class="lucide-lg"></i></div>
+    </div>
+
+    <div class="detail-body">
+      <div class="detail-meta-row">
+        <div class="detail-event-badge" id="detail-event-badge"></div>
+        <div class="detail-status-pill" id="detail-status"></div>
+      </div>
+
+      <h2 class="detail-name" id="detail-name"></h2>
+
+      <div class="detail-dish-block" id="detail-dish-block">
+        <div class="detail-dish-name" id="detail-dish"></div>
+        <p class="detail-dish-desc" id="detail-dish-desc"></p>
+      </div>
+
+      <div class="detail-info-strip">
+        <div class="detail-info-row" id="detail-address-row">
+          <span class="detail-info-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="detail-info-text" id="detail-address"></span>
+        </div>
+      </div>
+
+      <div class="detail-schedule-block">
+        <div class="detail-section-label">Horari</div>
+        <div id="detail-hours"></div>
+      </div>
+
+      <div class="detail-tags" id="detail-tags"></div>
+
+      <div class="detail-actions">
+        <button class="detail-btn detail-btn--primary" id="detail-btn-route">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Com arribar-hi
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- #app-new -->
+
+<!-- External libs -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/@turf/turf@7/turf.min.js"></script>
+
+<!-- Core modules -->
+<script src="assets/js/core/status.js"></script>
+<script src="assets/js/core/detail-drawer.js"></script>
+<script src="assets/js/core/location.js"></script>
+<script src="assets/js/core/proximity.js"></script>
+<script src="assets/js/core/transit-layer.js"></script>
+<!-- Nearme entrypoint -->
+<script src="assets/js/nearme/main.js"></script>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,888 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128617,
+          41.368816
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#CE1126",
+            "long_name": "Hospital de Bellvitge - Fondo",
+            "route_type": 1,
+            "short_name": "L1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.118",
+        "stop_name": "Santa Eulàlia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.132315,
+          41.363137
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#00A6D6",
+            "long_name": "ZAL | Riu Vell - Collblanc",
+            "route_type": 1,
+            "short_name": "L10S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.958",
+        "stop_name": "Ciutat de la Justícia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1241,
+          41.361354
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#00A6D6",
+            "long_name": "ZAL | Riu Vell - Collblanc",
+            "route_type": 1,
+            "short_name": "L10S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.959",
+        "stop_name": "Provençana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.13656,
+          41.365826
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Pg. Zona Franca / Fòrum Campus Besòs",
+            "route_type": 3,
+            "short_name": "H16",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.183.695524",
+        "stop_name": "Gran Via - Ildefons Cerdà"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.13196,
+          41.361782
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.185.691628",
+        "stop_name": "Av Granvia - Bloc I. Cerdà"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.134608,
+          41.366617
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Manso / La Bordeta",
+            "route_type": 3,
+            "short_name": "91",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.760.675170",
+        "stop_name": "Badal - Av Carrilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.136399,
+          41.365223
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Pg. Zona Franca / Fòrum Campus Besòs",
+            "route_type": 3,
+            "short_name": "H16",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1173.698925",
+        "stop_name": "Gran Via - Física"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.133047,
+          41.369376
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1769.675169",
+        "stop_name": "Badal - Constitució"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.134587,
+          41.369524
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "La Bordeta",
+            "route_type": 3,
+            "short_name": "115",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Manso / La Bordeta",
+            "route_type": 3,
+            "short_name": "91",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1848.692258",
+        "stop_name": "Constitució - Riera de Tena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.134108,
+          41.366544
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1976.676520",
+        "stop_name": "Badal - Av Carrilet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.13444,
+          41.363662
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2363.683653",
+        "stop_name": "Gran Via - Radi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.133513,
+          41.36925
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "La Bordeta",
+            "route_type": 3,
+            "short_name": "115",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2537.676518",
+        "stop_name": "Constitució - Badal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.132978,
+          41.368248
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "La Bordeta",
+            "route_type": 3,
+            "short_name": "115",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2916.680781",
+        "stop_name": "Rambla de Badal - Constitució"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.133837,
+          41.363809
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3023.684931",
+        "stop_name": "Ildefons Cerdà - Ciutat de la Justícia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131302,
+          41.361903
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3024.692046",
+        "stop_name": "Av Granvia - Alhambra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.13574,
+          41.365078
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Zona Franca / Can Caralleu",
+            "route_type": 3,
+            "short_name": "V3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3323.689713",
+        "stop_name": "Ildefons Cerdà - Rambla Badal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128783,
+          41.370906
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3650.695509",
+        "stop_name": "Riera Blanca - Congost"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.130794,
+          41.369159
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3651.695511",
+        "stop_name": "Metro Santa Eulàlia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.130913,
+          41.369193
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3652.695513",
+        "stop_name": "Riera Blanca - Santiago Ramón y Cajal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128227,
+          41.371196
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3653.695590",
+        "stop_name": "Riera Blanca - Pavia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131643,
+          41.367752
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3700.695515",
+        "stop_name": "Riera Blanca - Santa Eulàlia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131021,
+          41.365484
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3701.695582",
+        "stop_name": "Aprestadora - Buenos Aires"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.127758,
+          41.363209
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3702.695712",
+        "stop_name": "Pl Francesc Macià"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.12412,
+          41.361442
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3703.696016",
+        "stop_name": "Metro Provençana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.123016,
+          41.360494
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3704.695501",
+        "stop_name": "CAP Amadeu Torner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122466,
+          41.36185
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3714.695517",
+        "stop_name": "Amadeu Torner - Aprestadora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122414,
+          41.365
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3715.695588",
+        "stop_name": "Av Carrilet - Cooperativa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.12627,
+          41.364564
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3716.695586",
+        "stop_name": "Av Carrilet - Comerç"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131698,
+          41.367911
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3718.695580",
+        "stop_name": "Riera Blanca - Santa Eulàlia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.134602,
+          41.362972
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3936.700227",
+        "stop_name": "Radi - Gran Via"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.132278,
+          41.365279
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3938.700223",
+        "stop_name": "Ciutat de la Justícia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.133789,
+          41.363772
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.8280.700241",
+        "stop_name": "Ciutat de la Justícia - Final de trajecte"
+      }
+    }
+  ]
+}

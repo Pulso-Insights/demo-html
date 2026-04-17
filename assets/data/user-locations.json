@@ -1,0 +1,99 @@
+{
+  "locations": [
+    {
+      "id": "casa",
+      "label": "Casa",
+      "icon": "🏠",
+      "coordinates": {
+        "lat": 41.3615,
+        "lng": 2.102
+      },
+      "isochrones": {
+        "transit": {
+          "15": "assets/data/isochrones/casa-transit-15.geojson",
+          "30": "assets/data/isochrones/casa-transit-30.geojson",
+          "45": "assets/data/isochrones/casa-transit-45.geojson"
+        },
+        "walk": {
+          "15": "assets/data/isochrones/casa-walk-15.geojson",
+          "30": "assets/data/isochrones/casa-walk-30.geojson",
+          "5": "assets/data/isochrones/casa-walk-5.geojson"
+        }
+      },
+      "transit_stops": {
+        "15": "assets/data/transit/stops/casa-15.geojson",
+        "30": "assets/data/transit/stops/casa-30.geojson",
+        "45": "assets/data/transit/stops/casa-45.geojson"
+      }
+    },
+    {
+      "id": "feina",
+      "label": "Feina",
+      "icon": "💼",
+      "coordinates": {
+        "lat": 41.3665,
+        "lng": 2.13
+      },
+      "isochrones": {
+        "transit": {
+          "15": "assets/data/isochrones/feina-transit-15.geojson",
+          "30": "assets/data/isochrones/feina-transit-30.geojson",
+          "45": "assets/data/isochrones/feina-transit-45.geojson"
+        },
+        "walk": {
+          "15": "assets/data/isochrones/feina-walk-15.geojson",
+          "30": "assets/data/isochrones/feina-walk-30.geojson",
+          "5": "assets/data/isochrones/feina-walk-5.geojson"
+        }
+      },
+      "transit_stops": {
+        "15": "assets/data/transit/stops/feina-15.geojson",
+        "30": "assets/data/transit/stops/feina-30.geojson",
+        "45": "assets/data/transit/stops/feina-45.geojson"
+      }
+    },
+    {
+      "id": "gimnas",
+      "label": "Gimnàs",
+      "icon": "🏋️",
+      "coordinates": {
+        "lat": 41.342,
+        "lng": 2.12
+      },
+      "isochrones": {
+        "transit": {
+          "15": "assets/data/isochrones/gimnas-transit-15.geojson",
+          "30": "assets/data/isochrones/gimnas-transit-30.geojson",
+          "45": "assets/data/isochrones/gimnas-transit-45.geojson"
+        },
+        "walk": {
+          "15": "assets/data/isochrones/gimnas-walk-15.geojson",
+          "30": "assets/data/isochrones/gimnas-walk-30.geojson",
+          "5": "assets/data/isochrones/gimnas-walk-5.geojson"
+        }
+      },
+      "transit_stops": {
+        "15": "assets/data/transit/stops/gimnas-15.geojson",
+        "30": "assets/data/transit/stops/gimnas-30.geojson",
+        "45": "assets/data/transit/stops/gimnas-45.geojson"
+      }
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-04-17T09:49:31+02:00",
+    "note": "isochrones are paths (relative to demo root) to GeoJSON Feature files. A null/missing slot falls back to a circle in core/proximity.js. transit_stops points at Point FeatureCollections of stops inside each transit polygon. Regenerate with demo/scripts/build-isochrones.",
+    "transit_contours": [
+      15,
+      30,
+      45
+    ],
+    "transit_depart": "2026-04-17T09:49:31+02:00",
+    "transit_routes_url": "assets/data/transit/routes.geojson",
+    "walk_contours": [
+      5,
+      15,
+      30
+    ],
+    "walk_generalize": 50
+  }
+}

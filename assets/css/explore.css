@@ -1,0 +1,343 @@
+/* ===== Lucide icons ===== */
+.lucide-sm { width: 16px; height: 16px; }
+.lucide-md { width: 20px; height: 20px; }
+.lucide-lg { width: 32px; height: 32px; }
+.lucide-sm, .lucide-md, .lucide-lg { vertical-align: -2px; }
+
+/* Status dots (replacing emoji circles) */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  vertical-align: 1px;
+  margin-right: 4px;
+}
+
+.status-dot.dot-open { background: #4CAF50; }
+.status-dot.dot-closing-soon { background: #F44336; }
+.status-dot.dot-opening-soon { background: #FF9800; }
+.status-dot.dot-closed { background: #BDBDBD; }
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #FF6B00;
+  --primary-bright: #FF8C00;
+  --primary-dark: #E65100;
+  --primary-medium: #FFA726;
+  --gray-light: #F5F5F5;
+  --gray-medium: #9E9E9E;
+  --gray-border: #E0E0E0;
+  --gray-dark: #424242;
+  --text-dark: #212121;
+  --text-medium: #616161;
+  --text-light: #9E9E9E;
+  --white: #FFFFFF;
+  --green: #4CAF50;
+  --orange-badge: #FF9800;
+  --red: #F44336;
+  --sidebar-width: 350px;
+  --card-width: 300px;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  color: var(--text-dark);
+  overflow: hidden;
+}
+
+/* ===== Sidebar ===== */
+#sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-right: 1px solid var(--gray-border);
+  z-index: 500;
+}
+
+
+
+.merchant-popular-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: #FFF3E0;
+  color: var(--primary-dark);
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+
+/* ===== Map ===== */
+#map-container {
+  flex: 1;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Loading */
+#map-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+#map-loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--gray-border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+#map-loading p {
+  margin-top: 12px;
+  color: var(--text-medium);
+  font-size: 14px;
+}
+
+
+/* Ripple */
+.ripple-ring {
+  position: absolute;
+  border: 2px solid rgba(255, 107, 0, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripple-anim 1s ease-out forwards;
+}
+
+@keyframes ripple-anim {
+  0% { width: 18px; height: 18px; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+  100% { width: 18px; height: 18px; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(3.5); opacity: 0; }
+}
+
+
+/* ===== Merchant Card (hover popup) ===== */
+.merchant-card {
+  position: absolute;
+  width: var(--card-width);
+  background: var(--white);
+  border: 1px solid var(--gray-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  overflow: hidden;
+  z-index: 1000;
+  pointer-events: auto;
+  transform-origin: bottom center;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.merchant-card.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+.merchant-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Card arrow - removed due to overflow:hidden on card, visual noise reduction */
+
+/* Card photo */
+.card-photo {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background: var(--gray-light);
+}
+
+.card-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px 16px 16px;
+  position: relative;
+}
+
+.card-badge {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  padding-right: 30px;
+}
+
+.card-divider {
+  height: 1px;
+  background: var(--gray-border);
+  margin: 8px 0;
+}
+
+.card-dish {
+  font-size: 14px;
+  color: var(--primary);
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+.card-address {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+
+.card-status {
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.card-status.open { color: var(--green); }
+.card-status.opening-soon,
+.card-status.closing-soon { color: var(--orange-badge); }
+.card-status.closed { color: var(--text-light); }
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.card-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--gray-light);
+  color: var(--text-medium);
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: rgba(255, 107, 0, 0.08);
+  color: var(--primary);
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 107, 0, 0.15);
+}
+
+.btn-large {
+  padding: 14px 20px;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* ===== Modal ===== */
+
+/* ===== Error state ===== */
+#map-loading.error p {
+  color: var(--red);
+}
+
+#map-loading.error .loading-spinner {
+  border-top-color: var(--red);
+  animation: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 300px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #sidebar {
+    width: 100%;
+    min-width: 100%;
+    height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid var(--gray-border);
+  }
+
+  #map-container {
+    height: 60vh;
+  }
+
+
+  .merchant-card {
+    display: none;
+  }
+}

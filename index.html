@@ -58,28 +58,16 @@
 
     main {
       flex: 1;
-      max-width: 860px;
+      max-width: 900px;
       width: 100%;
       margin: 0 auto;
       padding: 48px 24px;
     }
 
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      color: #212121;
-      margin-bottom: 6px;
-    }
-
-    .subtitle {
-      font-size: 15px;
-      color: #616161;
-      margin-bottom: 36px;
-    }
-
+    /* ── Cards grid ── */
     .demos-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
     }
 
@@ -89,10 +77,9 @@
       border: 1px solid #E0E0E0;
       overflow: hidden;
       transition: box-shadow 0.15s ease, transform 0.15s ease;
-      color: inherit;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
-      cursor: pointer;
     }
 
     .demo-card:hover {
@@ -100,100 +87,65 @@
       transform: translateY(-2px);
     }
 
-    .demo-card-accent {
-      height: 6px;
-    }
+    .demo-card-accent { height: 5px; }
 
     .demo-card-body {
-      padding: 20px 24px 24px;
+      padding: 20px 22px 22px;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
 
-    .demo-card-meta {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-
     .demo-type-badge {
+      display: inline-block;
       font-size: 11px;
       font-weight: 600;
       padding: 3px 8px;
       border-radius: 6px;
       background: #F5F5F5;
       color: #616161;
-    }
-
-    .demo-location {
-      font-size: 12px;
-      color: #9E9E9E;
+      margin-bottom: 14px;
     }
 
     .demo-icon {
-      font-size: 28px;
+      font-size: 26px;
       margin-bottom: 8px;
       display: block;
     }
 
     .demo-name {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       color: #212121;
       line-height: 1.3;
-      margin-bottom: 6px;
-    }
-
-    .demo-edition {
-      font-size: 12px;
-      font-weight: 600;
-      color: #9E9E9E;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .demo-description {
-      font-size: 14px;
-      color: #616161;
+      font-size: 13px;
+      color: #757575;
       line-height: 1.5;
       flex: 1;
       margin-bottom: 20px;
-    }
-
-    .demo-card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .demo-dates {
-      font-size: 12px;
-      color: #9E9E9E;
     }
 
     .demo-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 9px 18px;
+      padding: 9px 16px;
       border-radius: 8px;
       font-size: 13px;
       font-weight: 700;
       color: #fff;
       text-decoration: none;
       transition: filter 0.15s;
-      white-space: nowrap;
+      align-self: flex-start;
     }
 
     .demo-btn:hover { filter: brightness(0.9); }
 
-    .demo-btn svg {
-      width: 14px;
-      height: 14px;
-      flex-shrink: 0;
-    }
+    .demo-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
 
     footer {
       text-align: center;
@@ -217,90 +169,76 @@
   </header>
 
   <main>
-    <div class="demos-grid" id="demos-grid">
-      <!-- Rendered by JS -->
-    </div>
+    <div class="demos-grid" id="demos-grid"></div>
   </main>
 
   <footer>Marco Labs · Revent</footer>
 
   <script>
-    const demos = [
+    // ─── Event configuration ──────────────────────────────────────────────
+    // Update this object to switch the active event context across all demos.
+    const EVENT = {
+      name:     "A la tardor, platillos",
+      edition:  "11a edició",
+      location: "L'Hospitalet de Llobregat",
+      dates:    "6 – 23 nov 2025",
+      color:    "#FF6B00",
+    };
+
+    // ─── Demo screens ─────────────────────────────────────────────────────
+    // Each screen is an independent view of the platform for a given event.
+    const SCREENS = [
       {
-        param:       'platillos',
-        icon:        '🍽️',
-        name:        'A la tardor, platillos',
-        edition:     '11a edició',
-        type:        'Ruta gastronòmica',
-        location:    "L'Hospitalet de Llobregat",
-        dates:       '6 – 23 nov 2025',
-        description: "28 establiments participants amb un platillo + beguda per 4,50€. Mostra el seguiment en temps real d'una ruta gastronòmica municipal.",
-        color:       '#FF6B00',
+        icon:        "🗺️",
+        name:        "Mapa d'esdeveniments",
+        type:        "Experiència usuari",
+        description: "Vista jeràrquica del territori: des de la província fins al carrer. Seguiment en temps real dels participants i establiments.",
+        href:        "explore.html",
+        color:       "#2563EB",
+      },
+      {
+        icon:        "📍",
+        name:        "A prop teu",
+        type:        "Experiència usuari",
+        description: "Descobreix què tens al teu abast segons la ubicació i el temps disponible, amb isòcrones a peu i en transport públic.",
+        href:        "nearme.html",
+        color:       "#0EA5E9",
+      },
+      {
+        icon:        "📊",
+        name:        "Panel del Promotor",
+        type:        "Dashboard",
+        description: "Impacte digital, intel·ligència territorial per anell d'isòcrona i gestió de campanyes per a l'organitzador.",
+        href:        "dashboard.html",
+        color:       "#0F7B3E",
+      },
+      {
+        icon:        "📋",
+        name:        "Presentació — Ajuntament de L'H",
+        type:        "Presentació",
+        description: "Presentació completa de Revent per a l'Ajuntament de L'Hospitalet de Llobregat.",
+        href:        "slides.html",
+        color:       "#1565C0",
       },
     ];
 
-    const extras = [
-      {
-        icon:        '📊',
-        name:        'Presentació — Ajuntament de L\'H',
-        type:        'Presentació',
-        description: 'Presentació completa de Revent per a l\'Ajuntament de L\'Hospitalet de Llobregat.',
-        color:       '#1565C0',
-        href:        'presentacion.html',
-      },
-    ];
+    // ─── Render cards ─────────────────────────────────────────────────────
+    const arrowSvg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
 
-    const grid = document.getElementById('demos-grid');
-
-    const demoCards = demos.map(d => `
-      <div class="demo-card" onclick="location.href='app.html?demo=${d.param}'">
-        <div class="demo-card-accent" style="background:${d.color}"></div>
+    document.getElementById('demos-grid').innerHTML = SCREENS.map(s => `
+      <div class="demo-card" onclick="location.href='${s.href}'">
+        <div class="demo-card-accent" style="background:${s.color}"></div>
         <div class="demo-card-body">
-          <div class="demo-card-meta">
-            <span class="demo-type-badge">${d.type}</span>
-            <span class="demo-location">${d.location}</span>
-          </div>
-          <span class="demo-icon">${d.icon}</span>
-          <div class="demo-name">${d.name}</div>
-          <div class="demo-edition">${d.edition}</div>
-          <p class="demo-description">${d.description}</p>
-          <div class="demo-card-footer">
-            <span class="demo-dates">${d.dates}</span>
-            <a class="demo-btn" href="app.html?demo=${d.param}" style="background:${d.color}" onclick="event.stopPropagation()">
-              Obrir demo
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
+          <span class="demo-type-badge">${s.type}</span>
+          <span class="demo-icon">${s.icon}</span>
+          <div class="demo-name">${s.name}</div>
+          <p class="demo-description">${s.description}</p>
+          <a class="demo-btn" href="${s.href}" style="background:${s.color}" onclick="event.stopPropagation()">
+            Obrir ${arrowSvg}
+          </a>
         </div>
       </div>
-    `);
-
-    const extraCards = extras.map(e => `
-      <div class="demo-card" onclick="location.href='${e.href}'">
-        <div class="demo-card-accent" style="background:${e.color}"></div>
-        <div class="demo-card-body">
-          <div class="demo-card-meta">
-            <span class="demo-type-badge">${e.type}</span>
-          </div>
-          <span class="demo-icon">${e.icon}</span>
-          <div class="demo-name">${e.name}</div>
-          <p class="demo-description">${e.description}</p>
-          <div class="demo-card-footer">
-            <span></span>
-            <a class="demo-btn" href="${e.href}" style="background:${e.color}" onclick="event.stopPropagation()">
-              Obrir
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    `);
-
-    grid.innerHTML = [...demoCards, ...extraCards].join('');
+    `).join('');
   </script>
 </body>
 </html>

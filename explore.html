@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revent – Mapa d'esdeveniments</title>
+  <meta name="description" content="Revent: descobreix esdeveniments actius al teu territori, des de la província fins al carrer.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF6B00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3'/></svg>">
+
+  <!-- Manrope — single family for the whole card system -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+
+  <!-- MapLibre GL JS (vector tiles, WebGL render) -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+
+  <!-- Shared styles (markers, card, modal, merchant list…) -->
+  <link rel="stylesheet" href="assets/css/explore.css" />
+  <!-- Shared map styles (used by explore & future nearme modes) -->
+  <link rel="stylesheet" href="assets/css/core.css" />
+</head>
+<body>
+
+<div id="app-new">
+
+  <!-- Full-screen map -->
+  <div id="map-container">
+    <div id="map"></div>
+
+    <!-- Loading overlay -->
+    <div id="map-loading">
+      <div class="loading-spinner"></div>
+      <p>Carregant mapa…</p>
+    </div>
+  </div>
+
+  <!-- Back to demos button -->
+  <a id="map-back-btn" href="index.html" aria-label="Tornar al menú de demos">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Demos
+  </a>
+
+<!-- Sidebar: floating dark glass panel, shown in zones + activitat modes -->
+  <aside id="sidebar" class="hidden-sidebar">
+    <div id="sidebar-inner">
+      <!-- Rendered by explore/main.js based on current mode -->
+    </div>
+  </aside>
+
+  <!-- Focus Mode Pill -->
+  <div id="focus-pill" class="hidden" role="status">
+    <button id="focus-back" aria-label="Tornar a tots els esdeveniments">
+      ← Tots els esdeveniments
+    </button>
+    <span id="focus-event-name"></span>
+  </div>
+
+  <!-- Overlap Picker -->
+  <div id="overlap-picker" class="hidden" role="menu" aria-label="Selecciona un event"></div>
+
+  <!-- Hover Card -->
+  <div id="merchant-card" class="merchant-card hidden">
+    <div class="card-photo" id="card-photo"></div>
+    <div class="card-content">
+      <div class="card-badge" id="card-badge"></div>
+      <h3 class="card-name" id="card-name"></h3>
+      <div class="card-divider"></div>
+      <p class="card-dish" id="card-dish"></p>
+      <p class="card-address" id="card-address"></p>
+      <p class="card-status" id="card-status"></p>
+      <div class="card-tags" id="card-tags"></div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" id="card-btn-detail">Veure més</button>
+        <button class="btn btn-primary" id="card-btn-route">
+          Ruta
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+               style="vertical-align:-1px;margin-left:2px">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Drawer (right side, no overlay) -->
+  <div id="detail-drawer" class="detail-drawer detail-drawer--hidden">
+    <button class="detail-drawer-close" id="detail-drawer-close" aria-label="Tancar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6 6 18M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Hero photo with gradient overlay -->
+    <div class="detail-hero" id="detail-photo">
+      <div class="detail-hero-placeholder"><i data-lucide="image" class="lucide-lg"></i></div>
+    </div>
+
+    <!-- Scrollable content -->
+    <div class="detail-body">
+      <!-- Event badge + status pill -->
+      <div class="detail-meta-row">
+        <div class="detail-event-badge" id="detail-event-badge"></div>
+        <div class="detail-status-pill" id="detail-status"></div>
+      </div>
+
+      <!-- Name -->
+      <h2 class="detail-name" id="detail-name"></h2>
+
+      <!-- Dish highlight -->
+      <div class="detail-dish-block" id="detail-dish-block">
+        <div class="detail-dish-name" id="detail-dish"></div>
+        <p class="detail-dish-desc" id="detail-dish-desc"></p>
+      </div>
+
+      <!-- Info strip -->
+      <div class="detail-info-strip">
+        <div class="detail-info-row" id="detail-address-row">
+          <span class="detail-info-icon">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="detail-info-text" id="detail-address"></span>
+        </div>
+      </div>
+
+      <!-- Schedule -->
+      <div class="detail-schedule-block">
+        <div class="detail-section-label">Horari</div>
+        <div id="detail-hours"></div>
+      </div>
+
+      <!-- Tags -->
+      <div class="detail-tags" id="detail-tags"></div>
+
+      <!-- Actions -->
+      <div class="detail-actions">
+        <button class="detail-btn detail-btn--primary" id="detail-btn-route">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Com arribar-hi
+        </button>
+        <a class="detail-btn detail-btn--secondary" id="detail-btn-stats" href="#">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Panel del comerciant
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- #app-new -->
+
+<!-- External libs -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/@turf/turf@7/turf.min.js"></script>
+
+<!-- Core modules (shared across map modes) -->
+<script src="assets/js/core/status.js"></script>
+<script src="assets/js/core/map-mode.js"></script>
+<script src="assets/js/core/hierarchy.js"></script>
+<script src="assets/js/core/event-zone-layer.js"></script>
+<script src="assets/js/core/focus-mode.js"></script>
+<script src="assets/js/core/detail-drawer.js"></script>
+<!-- Explore mode entrypoint -->
+<script src="assets/js/explore/main.js"></script>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

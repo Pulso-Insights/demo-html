@@ -1,0 +1,2448 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.116594,
+          41.368396
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#CE1126",
+            "long_name": "Hospital de Bellvitge - Fondo",
+            "route_type": 1,
+            "short_name": "L1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.117",
+        "stop_name": "Torrassa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.115756,
+          41.368223
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#00A6D6",
+            "long_name": "ZAL | Riu Vell - Collblanc",
+            "route_type": 1,
+            "short_name": "L10S",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.915",
+        "stop_name": "Torrassa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.119195,
+          41.375743
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#005A97",
+            "long_name": "Cornellà Centre - Vall d'Hebron",
+            "route_type": 1,
+            "short_name": "L5",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.515",
+        "stop_name": "Collblanc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.118397,
+          41.376056
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#00A6D6",
+            "long_name": "ZAL | Riu Vell - Collblanc",
+            "route_type": 1,
+            "short_name": "L10S",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.916",
+        "stop_name": "Collblanc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.093463,
+          41.32225
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.906",
+        "stop_name": "Cèntric"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.089927,
+          41.331993
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.907",
+        "stop_name": "El Prat Estació"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.103073,
+          41.329119
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.909",
+        "stop_name": "Les Moreres"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111254,
+          41.333485
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.910",
+        "stop_name": "Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.127401,
+          41.341664
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.911",
+        "stop_name": "Parc Logístic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.130452,
+          41.351988
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.912",
+        "stop_name": "Fira"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.125924,
+          41.35756
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.913",
+        "stop_name": "Europa | Fira"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.117993,
+          41.360894
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#00A6D6",
+            "long_name": "ZAL | Riu Vell - Collblanc",
+            "route_type": 1,
+            "short_name": "L10S",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#FB712B",
+            "long_name": "Aeroport T1 - Zona Universitària",
+            "route_type": 1,
+            "short_name": "L9S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.914",
+        "stop_name": "Can Tries | Gornal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1241,
+          41.361354
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#00A6D6",
+            "long_name": "ZAL | Riu Vell - Collblanc",
+            "route_type": 1,
+            "short_name": "L10S",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "1.959",
+        "stop_name": "Provençana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.126577,
+          41.358353
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.92.681620",
+        "stop_name": "Pl Europa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.126404,
+          41.357419
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.472.682017",
+        "stop_name": "Pl Europa - Fira"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.115545,
+          41.331174
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.843.675921",
+        "stop_name": "Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.118123,
+          41.324991
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.844.675816",
+        "stop_name": "Carrer número 6 - Carrer F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.098731,
+          41.327374
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Prat XPRES (Pl. Espanya - Av. Remolar)",
+            "route_type": 3,
+            "short_name": "X2",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1015.696060",
+        "stop_name": "Av Verge de Montserrat - Ctra Marina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.093474,
+          41.321642
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1153.691043",
+        "stop_name": "Cèntric"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.093548,
+          41.321557
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1155.686571",
+        "stop_name": "Cèntric"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122077,
+          41.354971
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1434.681618",
+        "stop_name": "Av Granvia - Can Tries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.099254,
+          41.327341
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Prat XPRES (Pl. Espanya - Av. Remolar)",
+            "route_type": 3,
+            "short_name": "X2",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1442.696058",
+        "stop_name": "Av Verge de Montserrat - Ctra Marina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131949,
+          41.329827
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1610.675927",
+        "stop_name": "Carrer número 4 - Carrer C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.133333,
+          41.329619
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1614.675820",
+        "stop_name": "Carrer número 4 - Carrer B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128353,
+          41.331081
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1615.675926",
+        "stop_name": "Carrer número 4 - Carrer D"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.119037,
+          41.334345
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1617.684710",
+        "stop_name": "Carrer número 4 - Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122905,
+          41.33299
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1618.675924",
+        "stop_name": "Carrer número 4 - Carrer F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.125338,
+          41.332135
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1619.675925",
+        "stop_name": "Carrer número 4 - Carrer E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.140311,
+          41.334949
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1638.675928",
+        "stop_name": "Carrer A - Carrer número 3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.137357,
+          41.331041
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1641.675818",
+        "stop_name": "Carrer A - Carrer número 3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.117334,
+          41.334052
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1643.675922",
+        "stop_name": "Mercabarna - Mercat del Peix"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128757,
+          41.33011
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1645.675138",
+        "stop_name": "Carrer D - Carrer número 4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.127203,
+          41.327592
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1646.675139",
+        "stop_name": "Carrer D - Carrer número 5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.119821,
+          41.377057
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Collblanc / Sant Joan Despí",
+            "route_type": 3,
+            "short_name": "157",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Estació del Nord / Cardenal Reig",
+            "route_type": 3,
+            "short_name": "54",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#93107E",
+            "long_name": "Pg. Marítim / Ernest Lluch",
+            "route_type": 3,
+            "short_name": "D20",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Ernest Lluch / Bon Pastor",
+            "route_type": 3,
+            "short_name": "H8",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.1713.691613",
+        "stop_name": "Les Corts - Aurora Bertrana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.126102,
+          41.349459
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2184.699614",
+        "stop_name": "Botànica - Salvador Espriu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.126456,
+          41.349393
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2185.699525",
+        "stop_name": "Botànica - Miguel Hernández"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.116508,
+          41.345188
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2189.694350",
+        "stop_name": "Motors - Av Granvia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.124734,
+          41.340593
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Parc Logístic",
+            "route_type": 3,
+            "short_name": "23",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2246.688688",
+        "stop_name": "Parc Logístic - Final de trajecte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131018,
+          41.343002
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Parc Logístic",
+            "route_type": 3,
+            "short_name": "23",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2251.688684",
+        "stop_name": "Parc Logístic, anada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.130877,
+          41.34276
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Parc Logístic",
+            "route_type": 3,
+            "short_name": "23",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2252.688686",
+        "stop_name": "Parc Logístic, tornada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.101605,
+          41.328527
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Prat XPRES (Pl. Espanya - Av. Remolar)",
+            "route_type": 3,
+            "short_name": "X2",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2603.699364",
+        "stop_name": "CAP Ramona Via"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131052,
+          41.349066
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2709.690920",
+        "stop_name": "Pablo Iglesias - Av Joan Carles I"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.134424,
+          41.353259
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "La Marina",
+            "route_type": 3,
+            "short_name": "125",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2712.683505",
+        "stop_name": "Foc - Metal·lúrgia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128471,
+          41.331288
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2808.682754",
+        "stop_name": "Zona Franca - Carrer número 4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.125814,
+          41.332218
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2809.682752",
+        "stop_name": "Carrer número 4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122373,
+          41.333426
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2810.679954",
+        "stop_name": "Carrer número 4 - Carrer F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.118465,
+          41.334797
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2811.695889",
+        "stop_name": "Zona Franca - Mercabarna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111457,
+          41.333829
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2812.697822",
+        "stop_name": "Carrer K - Carrer número 40"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111918,
+          41.328857
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2813.679943",
+        "stop_name": "Carrer K - Carrer número 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.10214,
+          41.328456
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Prat XPRES (Pl. Espanya - Av. Remolar)",
+            "route_type": 3,
+            "short_name": "X2",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2824.688608",
+        "stop_name": "Av Verge de Monserrat - Sarajevo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.112304,
+          41.328678
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2827.681738",
+        "stop_name": "Mercabarna - Entrada El Prat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.111608,
+          41.333579
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2828.697820",
+        "stop_name": "Carrer K"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128463,
+          41.359766
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2965.696902",
+        "stop_name": "Av Granvia - Centre Comercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.124157,
+          41.356535
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2966.681622",
+        "stop_name": "Amadeu Torner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.123853,
+          41.355497
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2968.688533",
+        "stop_name": "Amadeu Torner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.128855,
+          41.359303
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Aeroport BCN",
+            "route_type": 3,
+            "short_name": "46",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#003888",
+            "long_name": "Gornal / Besòs Verneda",
+            "route_type": 3,
+            "short_name": "H12",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.2970.691758",
+        "stop_name": "Av Granvia - Centre Comercial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.090552,
+          41.331022
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3001.688643",
+        "stop_name": "Estació RENFE - Andana 2 - Final de trajecte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.086651,
+          41.328413
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3288.695971",
+        "stop_name": "Vall d'Aran - Remolar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.086791,
+          41.328335
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3289.695967",
+        "stop_name": "Vall d'Aran - Remolar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.098503,
+          41.329224
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3300.691455",
+        "stop_name": "Plaça Roigé i Badia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.102024,
+          41.331215
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3301.688437",
+        "stop_name": "Institut Illa dels Banyols"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.103523,
+          41.322748
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3359.690160",
+        "stop_name": "Ctra Marina - Av Onze de Setembre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.102166,
+          41.324284
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3360.690179",
+        "stop_name": "Plaça Constitució"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.101439,
+          41.325172
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3361.690177",
+        "stop_name": "Ctra Marina - Pablo Neruda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.09996,
+          41.32731
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3362.690171",
+        "stop_name": "Ctra Marina - Av Verge de Montserrat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.099825,
+          41.327246
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3363.690173",
+        "stop_name": "Ctra Marina - Av Verge de Montserrat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.101134,
+          41.325346
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3364.690175",
+        "stop_name": "Ctra Marina - Catalunya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.130752,
+          41.348672
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3373.690126",
+        "stop_name": "Pablo Iglesias - Salvador Espriu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131426,
+          41.350908
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3374.690128",
+        "stop_name": "Av Joan Carles I - Botànica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.102096,
+          41.324155
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3375.690181",
+        "stop_name": "Plaça Constitució"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.103457,
+          41.322608
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Paral·lel / El Prat",
+            "route_type": 3,
+            "short_name": "21",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3376.690162",
+        "stop_name": "Ctra Marina - Av Onze de Setembre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.095754,
+          41.322428
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3441.691616",
+        "stop_name": "Escola Bernat Metge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.127758,
+          41.341429
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / Parc Logístic",
+            "route_type": 3,
+            "short_name": "23",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3442.693508",
+        "stop_name": "Metro Parc Logístic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11851,
+          41.375702
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Collblanc / Sant Joan Despí",
+            "route_type": 3,
+            "short_name": "157",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#93107E",
+            "long_name": "Pg. Marítim / Ernest Lluch",
+            "route_type": 3,
+            "short_name": "D20",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3473.695455",
+        "stop_name": "Metro Collblanc"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.098556,
+          41.329402
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3488.693206",
+        "stop_name": "Plaça Roigé i Badia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.102083,
+          41.331098
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3489.693204",
+        "stop_name": "Institut Illa dels Banyols"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.100186,
+          41.333002
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Prat XPRES (Pl. Espanya - Av. Remolar)",
+            "route_type": 3,
+            "short_name": "X2",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3490.693202",
+        "stop_name": "Les Moreres - Ignasi Iglésias"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.100183,
+          41.332881
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Pl. Espanya / El Prat",
+            "route_type": 3,
+            "short_name": "65",
+            "text_color": "#FFFFFF"
+          },
+          {
+            "color": "#010101",
+            "long_name": "Prat XPRES (Pl. Espanya - Av. Remolar)",
+            "route_type": 3,
+            "short_name": "X2",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3491.693200",
+        "stop_name": "Les Moreres - Ignasi Iglésias"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.12412,
+          41.361442
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3703.696016",
+        "stop_name": "Metro Provençana"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.123016,
+          41.360494
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3704.695501",
+        "stop_name": "CAP Amadeu Torner"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.124349,
+          41.358236
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3705.696035",
+        "stop_name": "Amadeu Torner - Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.125841,
+          41.355706
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3706.695552",
+        "stop_name": "Av Joan Carles I - Av Gran Via"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.127559,
+          41.353596
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3707.695642",
+        "stop_name": "Av Joan Carles I - Ciències"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.129661,
+          41.351866
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3708.695644",
+        "stop_name": "Av Joan Carles I - Botànica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.124723,
+          41.346352
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3709.695556",
+        "stop_name": "Pablo Iglesias - Miguel Hernández"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122133,
+          41.346081
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3710.695495",
+        "stop_name": "Primer de maig - Botànica - Final de trajecte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.126136,
+          41.355639
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3712.695554",
+        "stop_name": "Av Joan Carles I - Ciències"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.124819,
+          41.357873
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3713.695559",
+        "stop_name": "Metro/FGC Europa - Fira"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.122466,
+          41.36185
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3714.695517",
+        "stop_name": "Amadeu Torner - Aprestadora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.129859,
+          41.352014
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#6AB023",
+            "long_name": "Districte Gran Via l'Hospitalet / Av. Esplugues",
+            "route_type": 3,
+            "short_name": "V1",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3720.695646",
+        "stop_name": "Av Joan Carles I - Botànica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.137345,
+          41.331025
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "Hospital Clínic / Polígon Zona Franca",
+            "route_type": 3,
+            "short_name": "109",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3768.696879",
+        "stop_name": "Carrer A - Cotxeres TB Zona Franca"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.134841,
+          41.353609
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3914.699942",
+        "stop_name": "Foc - Fira de Barcelona"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.130811,
+          41.35191
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#010101",
+            "long_name": "Paral·lel - L'Hospitalet (Av. Carrilet)",
+            "route_type": 3,
+            "short_name": "X3",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.3915.699946",
+        "stop_name": "Foc - Metro Fira"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.131172,
+          41.352065
+        ]
+      },
+      "properties": {
+        "routes": [],
+        "stop_id": "2.7007.699947",
+        "stop_name": "Aparcament C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.136074,
+          41.351922
+        ]
+      },
+      "properties": {
+        "routes": [
+          {
+            "color": "#DA291C",
+            "long_name": "La Marina",
+            "route_type": 3,
+            "short_name": "125",
+            "text_color": "#FFFFFF"
+          }
+        ],
+        "stop_id": "2.9621.696409",
+        "stop_name": "Plom 5 - 7"
+      }
+    }
+  ]
+}
