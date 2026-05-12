@@ -5,6 +5,9 @@
 const Dashboard = (() => {
   'use strict';
 
+  const _CFG = (typeof window !== 'undefined' && window.PULSO_CONFIG) || {};
+  const _URL = _CFG.dataUrls || {};
+
   let geointel = null;
   let isochrones = null;
   let merchantsData = null;
@@ -15,9 +18,9 @@ const Dashboard = (() => {
   async function init() {
     try {
       [geointel, isochrones, merchantsData] = await Promise.all([
-        fetch('assets/data/platillos-geointel.json').then(r => r.json()),
-        fetch('assets/data/platillos-isochrones.json').then(r => r.json()),
-        fetch('assets/data/platillos-merchants.json').then(r => r.json()),
+        fetch(_URL.starGeointel   || 'assets/data/platillos-geointel.json').then(r => r.json()),
+        fetch(_URL.starIsochrones || 'assets/data/platillos-isochrones.json').then(r => r.json()),
+        fetch(_URL.starMerchants  || 'assets/data/platillos-merchants.json').then(r => r.json()),
       ]);
 
       renderHeader();
@@ -337,7 +340,7 @@ const Dashboard = (() => {
 
   // ── Accions ─────────────────────────────────────────────────
 
-  const ACTIONS_DATA = [
+  const ACTIONS_DATA = _CFG.dashboardActions || [
     {
       id: 1, type: 'launch', icon: 'rocket',
       name: 'Inici de l\'esdeveniment',

@@ -1,9 +1,18 @@
 // ===== HierarchyLayer: territorial polygon layers (MapLibre GL JS) =====
 // Two levels:
-//   regional  (zoom 6-10)  → 4 Catalan provinces  (provinces-cat.json)
-//   municipal (zoom 11-13) → Barcelona municipalities (municipalities-bcn.json)
+//   regional  (zoom 6-10)  → provinces (default: 4 Catalan provinces)
+//   municipal (zoom 11-13) → municipalities (default: Barcelona)
+//
+// Region-specific data (URLs, demo overlays, labels) can be overridden via
+// window.PULSO_CONFIG.hierarchy — see explore-murcia.html for an example.
 
 const HierarchyLayer = (() => {
+  // Read region overrides from window config; default to BCN behavior so the
+  // existing Catalonia demo keeps working without any changes.
+  const _CFG = (typeof window !== 'undefined' && window.PULSO_CONFIG) || {};
+  const _H   = _CFG.hierarchy || {};
+  const _URL = _CFG.dataUrls   || {};
+
   let map  = null;
   let data = {};
 
@@ -20,15 +29,17 @@ const HierarchyLayer = (() => {
   // flag lets us ignore those events so hovering card A can't expand card B.
   let overCardCode  = null;
 
-  const COLOR = '#FF6B00';
+  const COLOR = _H.color || '#FF6B00';
 
   const SRC = { regional: 'hierarchy-regional', municipal: 'hierarchy-municipal' };
   const FILL = { regional: 'hierarchy-regional-fill', municipal: 'hierarchy-municipal-fill' };
   const LINE = { regional: 'hierarchy-regional-line', municipal: 'hierarchy-municipal-line' };
 
   // ---- Demo data overlays ----
+  // Region-specific overlays come from PULSO_CONFIG.hierarchy.{provinceDemo,muniDemo}.
+  // Defaults below are the Catalan/Barcelona dataset.
 
-  const PROVINCE_DEMO = {
+  const PROVINCE_DEMO = _H.provinceDemo || {
     '34090800000': {
       events: 12, municipalities: 4, participants: 312, interest: 92,
       tags: ['Gastronòmic', 'Cultural', 'Festa Major'],
@@ -51,12 +62,28 @@ const HierarchyLayer = (() => {
     },
   };
 
-  const MUNI_DEMO = {
+  const MUNI_DEMO = _H.muniDemo || {
     '34090808101': { events: 2, active: true,  tags: ['Gastronòmic', 'Mercat'], zoomTo: 14, centerTo: [41.3585, 2.0997] },
     '34090808019': { events: 1, active: false, tags: ['Gastronòmic'],           zoomTo: 14, centerTo: [41.3851, 2.1734] },
     '34090808187': { events: 1, active: false, tags: ['Cultural'],              zoomTo: 14, centerTo: [41.5456, 2.1088] },
     '34090808015': { events: 1, active: false, tags: ['Festa Major'],           zoomTo: 14, centerTo: [41.4494, 2.2426] },
   };
+
+  // i18n strings. Defaults are Catalan; override via PULSO_CONFIG.hierarchy.strings.
+  const STR = Object.assign(
+    {
+      regional:        'Província',
+      municipal:       'Municipi',
+      municipalities:  'municipis',
+      event:           'event',
+      eventPlural:     'events',
+      active:          'actiu',
+      activePlural:    'actius',
+      noActivity:      'Sense activitat',
+      exploreHint:     'Clic per explorar',
+    },
+    _H.strings || {},
+  );
 
   // ---- Style computation ----
   // Each feature gets precomputed _fillOpacity, _lineOpacity, _lineWidth so paint
@@ -82,8 +109,8 @@ const HierarchyLayer = (() => {
     let provGeo, muniGeo;
     try {
       const [provResp, muniResp] = await Promise.all([
-        fetch('assets/data/provinces-cat.json'),
-        fetch('assets/data/municipalities-bcn.json'),
+        fetch(_URL.provinces      || 'assets/data/provinces-cat.json'),
+        fetch(_URL.municipalities || 'assets/data/municipalities-bcn.json'),
       ]);
       if (!provResp.ok) throw new Error(`provinces fetch: HTTP ${provResp.status}`);
       if (!muniResp.ok) throw new Error(`municipalities fetch: HTTP ${muniResp.status}`);
@@ -418,14 +445,27 @@ const HierarchyLayer = (() => {
     suppressed.forEach(i => items[i].el.classList.add('rc--suppressed'));
   }
 
-  // ---- Card HTML (Revent Card primitive — .rc) ----
+  // ---- Card HTML (Pulso Card primitive — .rc) ----
 
-  const TAG_CLASS = {
-    'Gastronòmic': 'gastro',
-    'Cultural':    'cultural',
-    'Festa Major': 'festa',
-    'Mercat':      'mercat',
-  };
+  // TAG_CLASS maps tag display strings → CSS accent classes (rc-tag--{accent}).
+  // Defaults cover the Catalan demo's tags; override via PULSO_CONFIG.hierarchy.tagClass.
+  const TAG_CLASS = Object.assign(
+    {
+      'Gastronòmic':  'gastro',
+      'Gastronomía':  'gastro',
+      'Cultural':     'cultural',
+      'Festa Major':  'festa',
+      'Fiesta':       'festa',
+      'Mercat':       'mercat',
+      'Mercado':      'mercat',
+      'Histórico':    'historico',
+      'Religioso':    'religioso',
+      'Música':       'musica',
+      'Cine':         'cine',
+      'Natural':      'natural',
+    },
+    _H.tagClass || {},
+  );
 
   function buildTagsHtml(tags) {
     if (!tags || !tags.length) return '';
@@ -445,29 +485,31 @@ const HierarchyLayer = (() => {
     const evtCount   = p.events || 0;
     const isLive     = evtCount > 0;
     const isRegional = level === 'regional';
-    const levelLabel = isRegional ? 'Província' : 'Municipi';
+    const levelLabel = isRegional ? STR.regional : STR.municipal;
     const accent     = pickAccent(p.tags);
 
-    // Summary: "N events · N municipis" (regional) or "N events actius" (municipal)
+    // Summary: "N events · N municipalities" (regional) or "N events active" (municipal)
+    const evtWord = evtCount !== 1 ? STR.eventPlural : STR.event;
+    const actWord = evtCount !== 1 ? STR.activePlural : STR.active;
     let summaryHtml = '';
     if (isLive) {
       if (isRegional) {
         const muniPart = p.municipalities
-          ? `<span class="rc-summary-sep"></span><span><strong>${p.municipalities}</strong> municipis</span>`
+          ? `<span class="rc-summary-sep"></span><span><strong>${p.municipalities}</strong> ${STR.municipalities}</span>`
           : '';
         summaryHtml = `
           <div class="rc-summary">
-            <span><strong>${evtCount}</strong> event${evtCount !== 1 ? 's' : ''}</span>
+            <span><strong>${evtCount}</strong> ${evtWord}</span>
             ${muniPart}
           </div>`;
       } else {
         summaryHtml = `
           <div class="rc-summary">
-            <span><strong>${evtCount}</strong> event${evtCount !== 1 ? 's' : ''} actiu${evtCount !== 1 ? 's' : ''}</span>
+            <span><strong>${evtCount}</strong> ${evtWord} ${actWord}</span>
           </div>`;
       }
     } else {
-      summaryHtml = `<div class="rc-summary"><span>Sense activitat</span></div>`;
+      summaryHtml = `<div class="rc-summary"><span>${STR.noActivity}</span></div>`;
     }
 
     // Body (hover / open): interest bar + tags
@@ -483,7 +525,7 @@ const HierarchyLayer = (() => {
       : '';
 
     const hintHtml = (p.centerTo && p.zoomTo)
-      ? `<div class="rc-hint">Clic per explorar
+      ? `<div class="rc-hint">${STR.exploreHint}
            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h6M7 3l3 3-3 3"/></svg>
          </div>`
       : '';

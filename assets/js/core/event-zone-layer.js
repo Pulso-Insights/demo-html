@@ -4,6 +4,9 @@
 // Clicking a zone card flies to zoom 16, entering 'activitat' mode.
 
 const EventZoneLayer = (() => {
+  // Region-specific zones come from PULSO_CONFIG.eventZones; default to BCN.
+  const _CFG = (typeof window !== 'undefined' && window.PULSO_CONFIG) || {};
+
   let map           = null;
   let active        = false;
   let createdIds    = [];              // layer/source ids added on show()
@@ -21,7 +24,7 @@ const EventZoneLayer = (() => {
 
   // ---- Demo event zones ----
 
-  const EVENT_ZONES = [
+  const EVENT_ZONES = _CFG.eventZones || [
     {
       id:           'ruta-gastronomica',
       realEventId:  'platillos-2025',
@@ -65,7 +68,7 @@ const EventZoneLayer = (() => {
     return merged;
   }
 
-  // ---- Card HTML (Revent Card primitive — .rc) ----
+  // ---- Card HTML (Pulso Card primitive — .rc) ----
 
   const TAG_ACCENT = {
     'Gastronòmic': 'gastro',

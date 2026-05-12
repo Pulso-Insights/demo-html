@@ -1,0 +1,99 @@
+{
+  "totalPopulation": 28700,
+  "area": 4200000,
+  "density": 6833,
+  "method": "building_weighted",
+  "totalFootfall": 102400,
+  "demographics": {
+    "totalPopulation": 28700,
+    "ageDistribution": {
+      "age0to15": 14.8,
+      "age16to24": 10.9,
+      "age25to34": 12.4,
+      "age35to44": 14.6,
+      "age45to54": 14.9,
+      "age55to64": 13.2,
+      "age65plus": 19.2
+    },
+    "medianAge": 44.7,
+    "meanAge": 43.1,
+    "malePercent": 48.6,
+    "femalePercent": 51.4,
+    "spanishPercent": 81.3,
+    "foreignPercent": 18.7
+  },
+  "income": {
+    "meanIncomePerPerson": 11800,
+    "medianIncomePerPerson": 10500,
+    "meanIncomePerHousehold": 28400,
+    "medianIncomePerHousehold": 25200,
+    "salaryPercent": 62.4,
+    "pensionPercent": 21.8,
+    "unemploymentPercent": 8.1,
+    "otherBenefitsPercent": 4.3,
+    "otherIncomePercent": 3.4,
+    "giniIndex": 0.36,
+    "p80p20": 4.2,
+    "year": 2024
+  },
+  "mobility": {
+    "dateFrom": "2026-03-29T00:00:00Z",
+    "dateTo": "2026-04-05T23:59:59Z",
+    "visitorsTotal": 102400,
+    "visitorsLocal": 24300,
+    "visitorsRegional": 49800,
+    "visitorsNational": 22600,
+    "visitorsInternational": 5700,
+    "peakDay": "2026-04-03",
+    "peakHour": 22,
+    "avgStayMinutes": 168
+  },
+  "pois": {
+    "restaurants": 47,
+    "bars": 64,
+    "hotels": 12,
+    "parkings": 8,
+    "culturalSites": 12
+  },
+  "weather": {
+    "avgTempC": 17.4,
+    "precipMm": 8.2,
+    "sunHoursDaily": 9.1
+  },
+  "airQuality": {
+    "avgPM25": 11.2,
+    "avgPM10": 23.7,
+    "avgNO2": 14.8,
+    "maxAQI": 62
+  },
+  "alerts": [
+    {
+      "type": "aforo",
+      "level": "medio",
+      "description": "Saturación esperada Jueves y Viernes Santo en Av. Juan Carlos I"
+    },
+    {
+      "type": "movilidad",
+      "level": "alto",
+      "description": "Cortes de tráfico durante procesiones nocturnas"
+    }
+  ],
+  "score": 87,
+  "isochrones": {
+    "walk_5": {
+      "population": 9400,
+      "footfall": 38600,
+      "pois": 8
+    },
+    "walk_15": {
+      "population": 22100,
+      "footfall": 71200,
+      "pois": 12
+    },
+    "walk_30": {
+      "population": 28700,
+      "footfall": 102400,
+      "pois": 12
+    }
+  }
+}

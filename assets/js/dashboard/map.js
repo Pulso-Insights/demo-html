@@ -8,8 +8,12 @@
 const DashboardMap = (() => {
   'use strict';
 
+  const _CFG = (typeof window !== 'undefined' && window.PULSO_CONFIG) || {};
+  const _URL = _CFG.dataUrls || {};
+  const _MAP = _CFG.map      || {};
+
   const BASEMAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
-  const CENTER = [2.110, 41.362]; // [lng, lat]
+  const CENTER = _MAP.centerStar || [2.110, 41.362]; // [lng, lat]
 
   let digitalMap = null;
   let terrMap = null;
@@ -181,19 +185,20 @@ const DashboardMap = (() => {
 
   async function loadInfluenceZone(map, fitToZone) {
     try {
-      const resp = await fetch('assets/data/platillos-influence-zone.geojson');
+      const resp = await fetch(_URL.starInfluenceZone || 'assets/data/platillos-influence-zone.geojson');
       const geojson = await resp.json();
 
+      const zoneColor = _CFG.eventColor || '#FF6B00';
       const srcId = 'influence-zone';
       map.addSource(srcId, { type: 'geojson', data: geojson });
       map.addLayer({
         id: 'influence-zone-fill', type: 'fill', source: srcId,
-        paint: { 'fill-color': '#FF6B00', 'fill-opacity': 0.06 },
+        paint: { 'fill-color': zoneColor, 'fill-opacity': 0.06 },
       });
       map.addLayer({
         id: 'influence-zone-line', type: 'line', source: srcId,
         paint: {
-          'line-color': '#FF6B00',
+          'line-color': zoneColor,
           'line-opacity': 0.3,
           'line-width': 1.5,
           'line-dasharray': [6, 4],

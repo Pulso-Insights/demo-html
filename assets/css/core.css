@@ -1,7 +1,7 @@
 /* ===== core.css: shared styles for map modes (explore, nearme…) ===== */
 
 /* ═══════════════════════════════════════════════════════════
-   Revent Card (.rc) — unified card primitive
+   Pulso Card (.rc) — unified card primitive
    Used at every zoom level (province, municipality, zone, merchant hover).
    Single template, single typography (Manrope), no icons, no chrome accents.
    See demo/cards.html for the design reference.
@@ -2094,4 +2094,120 @@
 @keyframes nm-hint-in {
   from { opacity: 0; transform: translate(-50%, -10px); }
   to   { opacity: 1; transform: translate(-50%, 0);     }
+}
+
+/* ---- EventsOverlay pins (small markers for the events list) ---- */
+
+/* The marker element is JUST the visible dot — no nested children, no
+   absolutely-positioned tooltips inside. Previously the marker wrapped a
+   .evt-pin-dot and a .evt-pin-card child; that absolutely-positioned card
+   altered the element's geometry enough that MapLibre's anchor: 'center'
+   no longer matched the visual center, and pins appeared to drift on zoom.
+   The hover tooltip now lives in a shared maplibregl.Popup (see
+   events-overlay.js → buildPopupHtml + ensurePopup). */
+
+.evt-pin {
+  --evt-color: #2563EB;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--evt-color);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  /* Promote each marker to its own compositor layer so paints during zoom
+     don't visibly drift on sub-pixel boundaries. */
+  will-change: transform;
+}
+
+/* Lucide icon inside the pin — inherits color via stroke="currentColor". */
+.evt-pin > svg {
+  width: 12px;
+  height: 12px;
+  stroke-width: 2.4;
+}
+
+.evt-pin:hover {
+  transform: scale(1.45);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+}
+
+.evt-pin--star {
+  width: 34px;
+  height: 34px;
+  border-width: 3px;
+  box-shadow: 0 0 0 4px rgba(67, 56, 202, 0.22), 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: evt-pin-pulse 2.4s ease-in-out infinite;
+}
+
+.evt-pin--star > svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.2;
+}
+
+@keyframes evt-pin-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(67, 56, 202, 0.22), 0 2px 8px rgba(0, 0, 0, 0.3); }
+  50%      { box-shadow: 0 0 0 12px rgba(67, 56, 202, 0.0), 0 2px 8px rgba(0, 0, 0, 0.3); }
+}
+
+/* Shared hover popup content (rendered into a single maplibregl.Popup that
+   moves between pins on hover). */
+.evt-popup .maplibregl-popup-content {
+  padding: 10px 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.evt-pop {
+  min-width: 200px;
+  max-width: 280px;
+  border-left: 3px solid var(--evt-color, #2563EB);
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #222;
+}
+
+.evt-pop-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.evt-pop-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #6E6E6E;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.evt-pop-sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #B5B5B5;
+}
+
+.evt-pop-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: #6E6E6E;
+}
+
+.evt-pop-att {
+  color: var(--evt-color, #2563EB);
+  font-weight: 600;
 }

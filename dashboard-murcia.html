@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panel Tactic – Pulso</title>
+  <title>Panel Táctico – Pulso · Semana Santa de Lorca</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1080' fill='%23222222'><circle cx='537.11' cy='478.14' r='71.79'/><path d='M401.92,275.04c-113.15,75.34-140.86,230.03-64.89,342.75l171.39,254.31c11.36,11.36,29.03,6.69,29.03-10.17l-.05-122.94-119.43-177.2c-44.37-65.84-28.7-158.73,36.77-203.65,69.89-47.95,166.52-26.57,209.12,48.42,35.7,62.85,18.95,143.77-38.65,187.44-25.38,19.24-54.75,28.81-83.98,29.61l.09,86.68c.73,9.07,8.88,15.56,17.92,14.51,40.07-4.69,86.11-23.76,121.32-49.31,98.86-71.74,128.57-220.31,64.79-324.49-72.78-118.88-228.78-152.28-343.42-75.95Z'/></svg>">
 
   <!-- MapLibre GL JS (vector tiles, WebGL) -->
@@ -21,12 +21,11 @@
         Demos
       </a>
       <div class="header-divider"></div>
-      <img src="https://hospitaletturisme.l-h.cat/img/logo_LHTurisme.png" alt="L'Hospitalet Turisme" class="header-logo">
       <div class="header-event" id="header-event">
         <!-- Filled by JS -->
       </div>
     </div>
-    <span class="dash-badge">Panel del Promotor</span>
+    <span class="dash-badge">Panel del Promotor · Región de Murcia</span>
   </header>
 
   <!-- Scrollable dashboard -->
@@ -36,8 +35,8 @@
     <section class="dash-row" id="row-digital">
       <div class="card card-full" id="card-digital">
         <div class="card-header">
-          <h2>Impacte Digital</h2>
-          <p class="card-subtitle">Metriques de la plataforma durant l'esdeveniment</p>
+          <h2>Impacto Digital</h2>
+          <p class="card-subtitle">Métricas de la plataforma durante el evento</p>
         </div>
         <div class="split-layout">
           <div class="split-data" id="digital-data">
@@ -54,8 +53,8 @@
     <section class="dash-row" id="row-participants">
       <div class="card card-full" id="card-participants">
         <div class="card-header">
-          <h2>Participants</h2>
-          <p class="card-subtitle">Detall per establiment adherit a l'esdeveniment</p>
+          <h2>Participantes</h2>
+          <p class="card-subtitle">Detalle por establecimiento o punto de interés adherido al evento</p>
         </div>
         <div id="participants-data">
           <!-- Filled by JS: top list, tags, report CTA -->
@@ -67,8 +66,8 @@
     <section class="dash-row" id="row-territori">
       <div class="card card-full" id="card-territori">
         <div class="card-header">
-          <h2>Territori</h2>
-          <p class="card-subtitle">Intelligencia geografica per anell d'isocrona</p>
+          <h2>Territorio</h2>
+          <p class="card-subtitle">Inteligencia geográfica por anillo de isócrona</p>
         </div>
         <div id="iso-selector"></div>
         <div class="split-layout">
@@ -89,12 +88,12 @@
         <div class="card-header">
           <div class="card-header-row">
             <div>
-              <h2>Accions</h2>
-              <p class="card-subtitle">Campanyes de notificacio i els seus resultats</p>
+              <h2>Acciones</h2>
+              <p class="card-subtitle">Campañas de notificación y sus resultados</p>
             </div>
             <button class="action-new-btn" id="btn-new-action">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              Nova accio
+              Nueva acción
             </button>
           </div>
         </div>
@@ -120,6 +119,8 @@
   <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <!-- Region-specific configuration: MUST load before dashboard modules -->
+  <script src="assets/js/config/pulso-config-murcia.js"></script>
   <!-- Dashboard modules -->
   <script src="assets/js/dashboard/map.js"></script>
   <script src="assets/js/dashboard/main.js"></script>

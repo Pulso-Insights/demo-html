@@ -1,0 +1,1700 @@
+{
+  "meta": {
+    "generated_at": "2026-05-12T14:55:59.026Z",
+    "total": 65,
+    "starEventId": "evt-013",
+    "types": {
+      "cultural": {
+        "color": "#7C3AED",
+        "icon": "theater",
+        "label": "Cultural"
+      },
+      "musical": {
+        "color": "#E11D48",
+        "icon": "music",
+        "label": "Música"
+      },
+      "historico": {
+        "color": "#92400E",
+        "icon": "swords",
+        "label": "Histórico"
+      },
+      "religioso": {
+        "color": "#4338CA",
+        "icon": "church",
+        "label": "Religioso"
+      },
+      "fiesta": {
+        "color": "#F59E0B",
+        "icon": "party-popper",
+        "label": "Fiesta"
+      },
+      "gastronomico": {
+        "color": "#DC2626",
+        "icon": "wine",
+        "label": "Gastronomía"
+      },
+      "mercado": {
+        "color": "#0F7B3E",
+        "icon": "shopping-bag",
+        "label": "Mercado"
+      },
+      "cine": {
+        "color": "#0EA5E9",
+        "icon": "film",
+        "label": "Cine"
+      },
+      "natural": {
+        "color": "#16A34A",
+        "icon": "flower-2",
+        "label": "Natural"
+      },
+      "deportivo": {
+        "color": "#0891B2",
+        "icon": "trophy",
+        "label": "Deporte"
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "evt-001",
+      "name": "Bando de la Huerta",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.108123,
+        "lat": 37.920023
+      },
+      "dates": {
+        "start": "2026-04-18",
+        "end": "2026-04-22"
+      },
+      "scale": "L",
+      "attendance": 24499,
+      "isStar": false
+    },
+    {
+      "id": "evt-002",
+      "name": "Entierro de la Sardina",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.115252,
+        "lat": 37.925211
+      },
+      "dates": {
+        "start": "2026-04-19",
+        "end": "2026-04-25"
+      },
+      "scale": "L",
+      "attendance": 14093,
+      "isStar": false
+    },
+    {
+      "id": "evt-003",
+      "name": "Murcia Tres Culturas",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.116562,
+        "lat": 37.924066
+      },
+      "dates": {
+        "start": "2026-05-14",
+        "end": "2026-05-16"
+      },
+      "scale": "M",
+      "attendance": 5055,
+      "isStar": false
+    },
+    {
+      "id": "evt-004",
+      "name": "WAM Estrella de Levante",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.110215,
+        "lat": 37.923534
+      },
+      "dates": {
+        "start": "2026-06-07",
+        "end": "2026-06-13"
+      },
+      "scale": "L",
+      "attendance": 24208,
+      "isStar": false
+    },
+    {
+      "id": "evt-005",
+      "name": "Feria de Murcia",
+      "type": "fiesta",
+      "typeLabel": "Fiesta",
+      "icon": "party-popper",
+      "color": "#F59E0B",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.106359,
+        "lat": 37.925649
+      },
+      "dates": {
+        "start": "2026-09-14",
+        "end": "2026-09-24"
+      },
+      "scale": "L",
+      "attendance": 15651,
+      "isStar": false
+    },
+    {
+      "id": "evt-006",
+      "name": "Festival Internacional de Folklore",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.108162,
+        "lat": 37.920334
+      },
+      "dates": {
+        "start": "2026-08-06",
+        "end": "2026-08-10"
+      },
+      "scale": "M",
+      "attendance": 2458,
+      "isStar": false
+    },
+    {
+      "id": "evt-007",
+      "name": "IBAFF — Festival de Cinema",
+      "type": "cine",
+      "typeLabel": "Cine",
+      "icon": "film",
+      "color": "#0EA5E9",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.114438,
+        "lat": 37.920952
+      },
+      "dates": {
+        "start": "2026-03-16",
+        "end": "2026-03-18"
+      },
+      "scale": "S",
+      "attendance": 403,
+      "isStar": false
+    },
+    {
+      "id": "evt-008",
+      "name": "Carthagineses y Romanos",
+      "type": "historico",
+      "typeLabel": "Histórico",
+      "icon": "swords",
+      "color": "#92400E",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.987821,
+        "lat": 37.638443
+      },
+      "dates": {
+        "start": "2026-09-16",
+        "end": "2026-09-23"
+      },
+      "scale": "L",
+      "attendance": 5645,
+      "isStar": false
+    },
+    {
+      "id": "evt-009",
+      "name": "La Mar de Músicas",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.990631,
+        "lat": 37.636201
+      },
+      "dates": {
+        "start": "2026-07-07",
+        "end": "2026-07-14"
+      },
+      "scale": "L",
+      "attendance": 19688,
+      "isStar": false
+    },
+    {
+      "id": "evt-010",
+      "name": "La Mar de Cines",
+      "type": "cine",
+      "typeLabel": "Cine",
+      "icon": "film",
+      "color": "#0EA5E9",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.983244,
+        "lat": 37.637813
+      },
+      "dates": {
+        "start": "2026-07-22",
+        "end": "2026-07-24"
+      },
+      "scale": "S",
+      "attendance": 820,
+      "isStar": false
+    },
+    {
+      "id": "evt-011",
+      "name": "Semana Santa de Cartagena",
+      "type": "religioso",
+      "typeLabel": "Religioso",
+      "icon": "church",
+      "color": "#4338CA",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.992523,
+        "lat": 37.638547
+      },
+      "dates": {
+        "start": "2026-04-10",
+        "end": "2026-04-16"
+      },
+      "scale": "L",
+      "attendance": 28296,
+      "isStar": false
+    },
+    {
+      "id": "evt-012",
+      "name": "Mucho Más Mayo",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.994624,
+        "lat": 37.635018
+      },
+      "dates": {
+        "start": "2026-05-01",
+        "end": "2026-05-05"
+      },
+      "scale": "M",
+      "attendance": 3196,
+      "isStar": false
+    },
+    {
+      "id": "evt-013",
+      "name": "Semana Santa de Lorca",
+      "type": "religioso",
+      "typeLabel": "Religioso",
+      "icon": "church",
+      "color": "#4338CA",
+      "municipality": "Lorca",
+      "municipalityCode": "34093030024",
+      "coordinates": {
+        "lng": -1.75253,
+        "lat": 37.697298
+      },
+      "dates": {
+        "start": "2026-04-14",
+        "end": "2026-04-19"
+      },
+      "scale": "L",
+      "attendance": 11603,
+      "isStar": true
+    },
+    {
+      "id": "evt-014",
+      "name": "Feria de Lorca",
+      "type": "fiesta",
+      "typeLabel": "Fiesta",
+      "icon": "party-popper",
+      "color": "#F59E0B",
+      "municipality": "Lorca",
+      "municipalityCode": "34093030024",
+      "coordinates": {
+        "lng": -1.755691,
+        "lat": 37.695509
+      },
+      "dates": {
+        "start": "2026-09-24",
+        "end": "2026-09-28"
+      },
+      "scale": "M",
+      "attendance": 3226,
+      "isStar": false
+    },
+    {
+      "id": "evt-015",
+      "name": "Lorca, Taller del Tiempo",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Lorca",
+      "municipalityCode": "34093030024",
+      "coordinates": {
+        "lng": -1.758936,
+        "lat": 37.703034
+      },
+      "dates": {
+        "start": "2026-10-08",
+        "end": "2026-10-09"
+      },
+      "scale": "S",
+      "attendance": 611,
+      "isStar": false
+    },
+    {
+      "id": "evt-016",
+      "name": "Festival Internacional de Folclore Ciudad del Sol",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Lorca",
+      "municipalityCode": "34093030024",
+      "coordinates": {
+        "lng": -1.757744,
+        "lat": 37.694492
+      },
+      "dates": {
+        "start": "2026-08-11",
+        "end": "2026-08-16"
+      },
+      "scale": "M",
+      "attendance": 5067,
+      "isStar": false
+    },
+    {
+      "id": "evt-017",
+      "name": "Caballos del Vino",
+      "type": "historico",
+      "typeLabel": "Histórico",
+      "icon": "swords",
+      "color": "#92400E",
+      "municipality": "Caravaca de la Cruz",
+      "municipalityCode": "34093030015",
+      "coordinates": {
+        "lng": -2.026656,
+        "lat": 38.010351
+      },
+      "dates": {
+        "start": "2026-05-24",
+        "end": "2026-05-28"
+      },
+      "scale": "L",
+      "attendance": 24463,
+      "isStar": false
+    },
+    {
+      "id": "evt-018",
+      "name": "Bandos Moros y Cristianos",
+      "type": "historico",
+      "typeLabel": "Histórico",
+      "icon": "swords",
+      "color": "#92400E",
+      "municipality": "Caravaca de la Cruz",
+      "municipalityCode": "34093030015",
+      "coordinates": {
+        "lng": -2.029534,
+        "lat": 38.004334
+      },
+      "dates": {
+        "start": "2026-05-23",
+        "end": "2026-05-26"
+      },
+      "scale": "M",
+      "attendance": 5301,
+      "isStar": false
+    },
+    {
+      "id": "evt-019",
+      "name": "Moros y Cristianos de Yecla",
+      "type": "historico",
+      "typeLabel": "Histórico",
+      "icon": "swords",
+      "color": "#92400E",
+      "municipality": "Yecla",
+      "municipalityCode": "34093030043",
+      "coordinates": {
+        "lng": -1.150749,
+        "lat": 38.603303
+      },
+      "dates": {
+        "start": "2026-12-22",
+        "end": "2026-12-24"
+      },
+      "scale": "M",
+      "attendance": 1363,
+      "isStar": false
+    },
+    {
+      "id": "evt-020",
+      "name": "Feria del Vino de Yecla",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Yecla",
+      "municipalityCode": "34093030043",
+      "coordinates": {
+        "lng": -1.153672,
+        "lat": 38.602983
+      },
+      "dates": {
+        "start": "2026-08-07",
+        "end": "2026-08-09"
+      },
+      "scale": "S",
+      "attendance": 950,
+      "isStar": false
+    },
+    {
+      "id": "evt-021",
+      "name": "Fiesta de la Vendimia",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Jumilla",
+      "municipalityCode": "34093030022",
+      "coordinates": {
+        "lng": -1.313144,
+        "lat": 38.465234
+      },
+      "dates": {
+        "start": "2026-08-09",
+        "end": "2026-08-14"
+      },
+      "scale": "M",
+      "attendance": 4626,
+      "isStar": false
+    },
+    {
+      "id": "evt-022",
+      "name": "Cabalgata de los Reyes Magos",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Jumilla",
+      "municipalityCode": "34093030022",
+      "coordinates": {
+        "lng": -1.30458,
+        "lat": 38.463355
+      },
+      "dates": {
+        "start": "2026-01-13",
+        "end": "2026-01-14"
+      },
+      "scale": "S",
+      "attendance": 165,
+      "isStar": false
+    },
+    {
+      "id": "evt-023",
+      "name": "Carnaval de Águilas",
+      "type": "fiesta",
+      "typeLabel": "Fiesta",
+      "icon": "party-popper",
+      "color": "#F59E0B",
+      "municipality": "Águilas",
+      "municipalityCode": "34093030003",
+      "coordinates": {
+        "lng": -1.587821,
+        "lat": 37.462669
+      },
+      "dates": {
+        "start": "2026-02-22",
+        "end": "2026-02-28"
+      },
+      "scale": "L",
+      "attendance": 20581,
+      "isStar": false
+    },
+    {
+      "id": "evt-024",
+      "name": "Festival Cope Águilas",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Águilas",
+      "municipalityCode": "34093030003",
+      "coordinates": {
+        "lng": -1.593028,
+        "lat": 37.467137
+      },
+      "dates": {
+        "start": "2026-08-01",
+        "end": "2026-08-02"
+      },
+      "scale": "S",
+      "attendance": 1024,
+      "isStar": false
+    },
+    {
+      "id": "evt-025",
+      "name": "Floración del Valle del Ricote",
+      "type": "natural",
+      "typeLabel": "Natural",
+      "icon": "flower-2",
+      "color": "#16A34A",
+      "municipality": "Cieza",
+      "municipalityCode": "34093030019",
+      "coordinates": {
+        "lng": -1.464066,
+        "lat": 38.275109
+      },
+      "dates": {
+        "start": "2026-03-07",
+        "end": "2026-03-10"
+      },
+      "scale": "M",
+      "attendance": 2165,
+      "isStar": false
+    },
+    {
+      "id": "evt-026",
+      "name": "Semana Santa de Cieza",
+      "type": "religioso",
+      "typeLabel": "Religioso",
+      "icon": "church",
+      "color": "#4338CA",
+      "municipality": "Cieza",
+      "municipalityCode": "34093030019",
+      "coordinates": {
+        "lng": -1.476103,
+        "lat": 38.276421
+      },
+      "dates": {
+        "start": "2026-04-08",
+        "end": "2026-04-11"
+      },
+      "scale": "M",
+      "attendance": 5411,
+      "isStar": false
+    },
+    {
+      "id": "evt-027",
+      "name": "Bahía de Mazarrón Música",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Mazarrón",
+      "municipalityCode": "34093030026",
+      "coordinates": {
+        "lng": -1.357481,
+        "lat": 37.62538
+      },
+      "dates": {
+        "start": "2026-07-14",
+        "end": "2026-07-15"
+      },
+      "scale": "S",
+      "attendance": 623,
+      "isStar": false
+    },
+    {
+      "id": "evt-028",
+      "name": "Fiestas del Milagro",
+      "type": "fiesta",
+      "typeLabel": "Fiesta",
+      "icon": "party-popper",
+      "color": "#F59E0B",
+      "municipality": "Mazarrón",
+      "municipalityCode": "34093030026",
+      "coordinates": {
+        "lng": -1.353483,
+        "lat": 37.617151
+      },
+      "dates": {
+        "start": "2026-11-03",
+        "end": "2026-11-04"
+      },
+      "scale": "S",
+      "attendance": 818,
+      "isStar": false
+    },
+    {
+      "id": "evt-029",
+      "name": "Festival Internacional de Jazz de San Javier",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "San Javier",
+      "municipalityCode": "34093030035",
+      "coordinates": {
+        "lng": -0.845373,
+        "lat": 37.820133
+      },
+      "dates": {
+        "start": "2026-07-05",
+        "end": "2026-07-07"
+      },
+      "scale": "M",
+      "attendance": 4367,
+      "isStar": false
+    },
+    {
+      "id": "evt-030",
+      "name": "Festival Internacional de Teatro, Música y Danza",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "San Javier",
+      "municipalityCode": "34093030035",
+      "coordinates": {
+        "lng": -0.84833,
+        "lat": 37.818445
+      },
+      "dates": {
+        "start": "2026-08-22",
+        "end": "2026-08-24"
+      },
+      "scale": "M",
+      "attendance": 2551,
+      "isStar": false
+    },
+    {
+      "id": "evt-031",
+      "name": "Fiesta del Arroz",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Calasparra",
+      "municipalityCode": "34093030013",
+      "coordinates": {
+        "lng": -1.659199,
+        "lat": 38.234362
+      },
+      "dates": {
+        "start": "2026-11-15",
+        "end": "2026-11-16"
+      },
+      "scale": "S",
+      "attendance": 521,
+      "isStar": false
+    },
+    {
+      "id": "evt-032",
+      "name": "Cata del Barrio de la Estación",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Bullas",
+      "municipalityCode": "34093030012",
+      "coordinates": {
+        "lng": -1.668131,
+        "lat": 38.043276
+      },
+      "dates": {
+        "start": "2026-06-15",
+        "end": "2026-06-16"
+      },
+      "scale": "S",
+      "attendance": 1046,
+      "isStar": false
+    },
+    {
+      "id": "evt-033",
+      "name": "Festival de Cerámica",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Totana",
+      "municipalityCode": "34093030039",
+      "coordinates": {
+        "lng": -1.523883,
+        "lat": 37.777479
+      },
+      "dates": {
+        "start": "2026-10-24",
+        "end": "2026-10-25"
+      },
+      "scale": "S",
+      "attendance": 946,
+      "isStar": false
+    },
+    {
+      "id": "evt-034",
+      "name": "Romería de Santa Eulalia",
+      "type": "religioso",
+      "typeLabel": "Religioso",
+      "icon": "church",
+      "color": "#4338CA",
+      "municipality": "Totana",
+      "municipalityCode": "34093030039",
+      "coordinates": {
+        "lng": -1.524499,
+        "lat": 37.773343
+      },
+      "dates": {
+        "start": "2026-01-02",
+        "end": "2026-01-07"
+      },
+      "scale": "M",
+      "attendance": 1403,
+      "isStar": false
+    },
+    {
+      "id": "evt-035",
+      "name": "Música a la Luz de las Velas",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Alhama de Murcia",
+      "municipalityCode": "34093030008",
+      "coordinates": {
+        "lng": -1.387557,
+        "lat": 37.819873
+      },
+      "dates": {
+        "start": "2026-07-22",
+        "end": "2026-07-24"
+      },
+      "scale": "S",
+      "attendance": 413,
+      "isStar": false
+    },
+    {
+      "id": "evt-036",
+      "name": "Festival Internacional Sal a Escena",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Molina de Segura",
+      "municipalityCode": "34093030027",
+      "coordinates": {
+        "lng": -1.194223,
+        "lat": 38.126585
+      },
+      "dates": {
+        "start": "2026-05-19",
+        "end": "2026-05-20"
+      },
+      "scale": "S",
+      "attendance": 425,
+      "isStar": false
+    },
+    {
+      "id": "evt-037",
+      "name": "Festival de Música Antigua",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Cehegín",
+      "municipalityCode": "34093030017",
+      "coordinates": {
+        "lng": -1.743176,
+        "lat": 38.077013
+      },
+      "dates": {
+        "start": "2026-06-08",
+        "end": "2026-06-10"
+      },
+      "scale": "S",
+      "attendance": 222,
+      "isStar": false
+    },
+    {
+      "id": "evt-038",
+      "name": "Encierros de Moratalla",
+      "type": "fiesta",
+      "typeLabel": "Fiesta",
+      "icon": "party-popper",
+      "color": "#F59E0B",
+      "municipality": "Moratalla",
+      "municipalityCode": "34093030028",
+      "coordinates": {
+        "lng": -1.990289,
+        "lat": 38.201522
+      },
+      "dates": {
+        "start": "2026-07-09",
+        "end": "2026-07-11"
+      },
+      "scale": "M",
+      "attendance": 3503,
+      "isStar": false
+    },
+    {
+      "id": "evt-039",
+      "name": "Festival de Música Mediterránea",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Fortuna",
+      "municipalityCode": "34093030020",
+      "coordinates": {
+        "lng": -1.134218,
+        "lat": 38.205369
+      },
+      "dates": {
+        "start": "2026-08-13",
+        "end": "2026-08-15"
+      },
+      "scale": "S",
+      "attendance": 371,
+      "isStar": false
+    },
+    {
+      "id": "evt-040",
+      "name": "Tamboradas de Mula",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Mula",
+      "municipalityCode": "34093030029",
+      "coordinates": {
+        "lng": -1.544719,
+        "lat": 38.009778
+      },
+      "dates": {
+        "start": "2026-04-12",
+        "end": "2026-04-17"
+      },
+      "scale": "M",
+      "attendance": 1892,
+      "isStar": false
+    },
+    {
+      "id": "evt-041",
+      "name": "Festival de los Caminos del Sureste",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Puerto Lumbreras",
+      "municipalityCode": "34093030033",
+      "coordinates": {
+        "lng": -1.818678,
+        "lat": 37.545234
+      },
+      "dates": {
+        "start": "2026-09-02",
+        "end": "2026-09-04"
+      },
+      "scale": "S",
+      "attendance": 680,
+      "isStar": false
+    },
+    {
+      "id": "evt-042",
+      "name": "Feria del Libro de Cehegín",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Cehegín",
+      "municipalityCode": "34093030017",
+      "coordinates": {
+        "lng": -1.749043,
+        "lat": 38.072808
+      },
+      "dates": {
+        "start": "2026-11-22",
+        "end": "2026-11-24"
+      },
+      "scale": "S",
+      "attendance": 410,
+      "isStar": false
+    },
+    {
+      "id": "evt-043",
+      "name": "Festival de Tapas de Cartagena",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.98918,
+        "lat": 37.639418
+      },
+      "dates": {
+        "start": "2026-07-03",
+        "end": "2026-07-05"
+      },
+      "scale": "S",
+      "attendance": 510,
+      "isStar": false
+    },
+    {
+      "id": "evt-044",
+      "name": "Festival de Cortometrajes de Beniel",
+      "type": "cine",
+      "typeLabel": "Cine",
+      "icon": "film",
+      "color": "#0EA5E9",
+      "municipality": "Beniel",
+      "municipalityCode": "34093030010",
+      "coordinates": {
+        "lng": -0.987148,
+        "lat": 38.025695
+      },
+      "dates": {
+        "start": "2026-05-21",
+        "end": "2026-05-23"
+      },
+      "scale": "S",
+      "attendance": 450,
+      "isStar": false
+    },
+    {
+      "id": "evt-045",
+      "name": "Feria Gastronómica de Santomera",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Santomera",
+      "municipalityCode": "34093030901",
+      "coordinates": {
+        "lng": -1.047267,
+        "lat": 38.085537
+      },
+      "dates": {
+        "start": "2026-01-06",
+        "end": "2026-01-08"
+      },
+      "scale": "S",
+      "attendance": 835,
+      "isStar": false
+    },
+    {
+      "id": "evt-046",
+      "name": "Encuentro de Artesanos de Murcia",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Murcia",
+      "municipalityCode": "34093030030",
+      "coordinates": {
+        "lng": -1.11149,
+        "lat": 37.92319
+      },
+      "dates": {
+        "start": "2026-03-14",
+        "end": "2026-03-16"
+      },
+      "scale": "S",
+      "attendance": 932,
+      "isStar": false
+    },
+    {
+      "id": "evt-047",
+      "name": "Festival de Cortometrajes de Archena",
+      "type": "cine",
+      "typeLabel": "Cine",
+      "icon": "film",
+      "color": "#0EA5E9",
+      "municipality": "Archena",
+      "municipalityCode": "34093030009",
+      "coordinates": {
+        "lng": -1.302861,
+        "lat": 38.118271
+      },
+      "dates": {
+        "start": "2026-11-18",
+        "end": "2026-11-19"
+      },
+      "scale": "S",
+      "attendance": 213,
+      "isStar": false
+    },
+    {
+      "id": "evt-048",
+      "name": "Mercado Artesano de Fortuna",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Fortuna",
+      "municipalityCode": "34093030020",
+      "coordinates": {
+        "lng": -1.128067,
+        "lat": 38.208548
+      },
+      "dates": {
+        "start": "2026-02-01",
+        "end": "2026-02-02"
+      },
+      "scale": "S",
+      "attendance": 195,
+      "isStar": false
+    },
+    {
+      "id": "evt-049",
+      "name": "Encuentro de Artesanos de Lorca",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Lorca",
+      "municipalityCode": "34093030024",
+      "coordinates": {
+        "lng": -1.751744,
+        "lat": 37.702346
+      },
+      "dates": {
+        "start": "2026-07-18",
+        "end": "2026-07-20"
+      },
+      "scale": "S",
+      "attendance": 845,
+      "isStar": false
+    },
+    {
+      "id": "evt-050",
+      "name": "Feria del Libro de Villanueva del Río Segura",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Villanueva del Río Segura",
+      "municipalityCode": "34093030042",
+      "coordinates": {
+        "lng": -1.317099,
+        "lat": 38.104431
+      },
+      "dates": {
+        "start": "2026-11-10",
+        "end": "2026-11-11"
+      },
+      "scale": "S",
+      "attendance": 789,
+      "isStar": false
+    },
+    {
+      "id": "evt-051",
+      "name": "Concierto de Música de Águilas",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Águilas",
+      "municipalityCode": "34093030003",
+      "coordinates": {
+        "lng": -1.591612,
+        "lat": 37.470285
+      },
+      "dates": {
+        "start": "2026-03-12",
+        "end": "2026-03-13"
+      },
+      "scale": "S",
+      "attendance": 360,
+      "isStar": false
+    },
+    {
+      "id": "evt-052",
+      "name": "Mercado Artesano de Mazarrón",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Mazarrón",
+      "municipalityCode": "34093030026",
+      "coordinates": {
+        "lng": -1.356482,
+        "lat": 37.625828
+      },
+      "dates": {
+        "start": "2026-08-13",
+        "end": "2026-08-14"
+      },
+      "scale": "S",
+      "attendance": 495,
+      "isStar": false
+    },
+    {
+      "id": "evt-053",
+      "name": "Concierto de Música de Totana",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Totana",
+      "municipalityCode": "34093030039",
+      "coordinates": {
+        "lng": -1.519805,
+        "lat": 37.771557
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-08"
+      },
+      "scale": "S",
+      "attendance": 418,
+      "isStar": false
+    },
+    {
+      "id": "evt-054",
+      "name": "Encuentro de Artesanos de Las Torres de Cotillas",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Las Torres de Cotillas",
+      "municipalityCode": "34093030038",
+      "coordinates": {
+        "lng": -1.275646,
+        "lat": 38.019314
+      },
+      "dates": {
+        "start": "2026-02-19",
+        "end": "2026-02-21"
+      },
+      "scale": "S",
+      "attendance": 565,
+      "isStar": false
+    },
+    {
+      "id": "evt-055",
+      "name": "Mercado Artesano de Fortuna",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Fortuna",
+      "municipalityCode": "34093030020",
+      "coordinates": {
+        "lng": -1.14079,
+        "lat": 38.206045
+      },
+      "dates": {
+        "start": "2026-08-23",
+        "end": "2026-08-25"
+      },
+      "scale": "S",
+      "attendance": 553,
+      "isStar": false
+    },
+    {
+      "id": "evt-056",
+      "name": "Feria del Libro de Jumilla",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "Jumilla",
+      "municipalityCode": "34093030022",
+      "coordinates": {
+        "lng": -1.311102,
+        "lat": 38.473946
+      },
+      "dates": {
+        "start": "2026-05-02",
+        "end": "2026-05-03"
+      },
+      "scale": "S",
+      "attendance": 604,
+      "isStar": false
+    },
+    {
+      "id": "evt-057",
+      "name": "Festival de Tapas de Cartagena",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Cartagena",
+      "municipalityCode": "34093030016",
+      "coordinates": {
+        "lng": -0.997645,
+        "lat": 37.634145
+      },
+      "dates": {
+        "start": "2026-03-03",
+        "end": "2026-03-04"
+      },
+      "scale": "S",
+      "attendance": 565,
+      "isStar": false
+    },
+    {
+      "id": "evt-058",
+      "name": "Feria del Libro de San Pedro del Pinatar",
+      "type": "cultural",
+      "typeLabel": "Cultural",
+      "icon": "theater",
+      "color": "#7C3AED",
+      "municipality": "San Pedro del Pinatar",
+      "municipalityCode": "34093030036",
+      "coordinates": {
+        "lng": -0.782175,
+        "lat": 37.834961
+      },
+      "dates": {
+        "start": "2026-12-17",
+        "end": "2026-12-18"
+      },
+      "scale": "S",
+      "attendance": 796,
+      "isStar": false
+    },
+    {
+      "id": "evt-059",
+      "name": "Concierto de Música de Lorquí",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Lorquí",
+      "municipalityCode": "34093030025",
+      "coordinates": {
+        "lng": -1.247745,
+        "lat": 38.103875
+      },
+      "dates": {
+        "start": "2026-01-14",
+        "end": "2026-01-15"
+      },
+      "scale": "S",
+      "attendance": 493,
+      "isStar": false
+    },
+    {
+      "id": "evt-060",
+      "name": "Festival de Tapas de Torre-Pacheco",
+      "type": "gastronomico",
+      "typeLabel": "Gastronomía",
+      "icon": "wine",
+      "color": "#DC2626",
+      "municipality": "Torre-Pacheco",
+      "municipalityCode": "34093030037",
+      "coordinates": {
+        "lng": -0.965868,
+        "lat": 37.773863
+      },
+      "dates": {
+        "start": "2026-04-17",
+        "end": "2026-04-18"
+      },
+      "scale": "S",
+      "attendance": 666,
+      "isStar": false
+    },
+    {
+      "id": "evt-061",
+      "name": "Concierto de Música de Lorca",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Lorca",
+      "municipalityCode": "34093030024",
+      "coordinates": {
+        "lng": -1.755748,
+        "lat": 37.695064
+      },
+      "dates": {
+        "start": "2026-12-03",
+        "end": "2026-12-05"
+      },
+      "scale": "S",
+      "attendance": 849,
+      "isStar": false
+    },
+    {
+      "id": "evt-062",
+      "name": "Festival de Cortometrajes de La Unión",
+      "type": "cine",
+      "typeLabel": "Cine",
+      "icon": "film",
+      "color": "#0EA5E9",
+      "municipality": "La Unión",
+      "municipalityCode": "34093030041",
+      "coordinates": {
+        "lng": -0.870342,
+        "lat": 37.611995
+      },
+      "dates": {
+        "start": "2026-04-07",
+        "end": "2026-04-08"
+      },
+      "scale": "S",
+      "attendance": 246,
+      "isStar": false
+    },
+    {
+      "id": "evt-063",
+      "name": "Procesión de Cehegín",
+      "type": "religioso",
+      "typeLabel": "Religioso",
+      "icon": "church",
+      "color": "#4338CA",
+      "municipality": "Cehegín",
+      "municipalityCode": "34093030017",
+      "coordinates": {
+        "lng": -1.738147,
+        "lat": 38.079837
+      },
+      "dates": {
+        "start": "2026-10-14",
+        "end": "2026-10-16"
+      },
+      "scale": "S",
+      "attendance": 847,
+      "isStar": false
+    },
+    {
+      "id": "evt-064",
+      "name": "Encuentro de Artesanos de Yecla",
+      "type": "mercado",
+      "typeLabel": "Mercado",
+      "icon": "shopping-bag",
+      "color": "#0F7B3E",
+      "municipality": "Yecla",
+      "municipalityCode": "34093030043",
+      "coordinates": {
+        "lng": -1.152849,
+        "lat": 38.600833
+      },
+      "dates": {
+        "start": "2026-02-03",
+        "end": "2026-02-05"
+      },
+      "scale": "S",
+      "attendance": 438,
+      "isStar": false
+    },
+    {
+      "id": "evt-065",
+      "name": "Concierto de Música de Santomera",
+      "type": "musical",
+      "typeLabel": "Música",
+      "icon": "music",
+      "color": "#E11D48",
+      "municipality": "Santomera",
+      "municipalityCode": "34093030901",
+      "coordinates": {
+        "lng": -1.056964,
+        "lat": 38.085897
+      },
+      "dates": {
+        "start": "2026-07-23",
+        "end": "2026-07-24"
+      },
+      "scale": "S",
+      "attendance": 366,
+      "isStar": false
+    }
+  ],
+  "aggregations": {
+    "byMunicipality": {
+      "34093030030": {
+        "events": 8,
+        "active": true,
+        "tags": [
+          "Cultural",
+          "Música",
+          "Fiesta"
+        ],
+        "attendance": 87299
+      },
+      "34093030016": {
+        "events": 7,
+        "active": true,
+        "tags": [
+          "Histórico",
+          "Música",
+          "Cine"
+        ],
+        "attendance": 58720
+      },
+      "34093030024": {
+        "events": 6,
+        "active": true,
+        "tags": [
+          "Religioso",
+          "Fiesta",
+          "Cultural"
+        ],
+        "attendance": 22201
+      },
+      "34093030015": {
+        "events": 2,
+        "active": true,
+        "tags": [
+          "Histórico"
+        ],
+        "attendance": 29764
+      },
+      "34093030043": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Histórico",
+          "Gastronomía",
+          "Mercado"
+        ],
+        "attendance": 2751
+      },
+      "34093030022": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Gastronomía",
+          "Cultural"
+        ],
+        "attendance": 5395
+      },
+      "34093030003": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Fiesta",
+          "Música"
+        ],
+        "attendance": 21965
+      },
+      "34093030019": {
+        "events": 2,
+        "active": true,
+        "tags": [
+          "Natural",
+          "Religioso"
+        ],
+        "attendance": 7576
+      },
+      "34093030026": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Música",
+          "Fiesta",
+          "Mercado"
+        ],
+        "attendance": 1936
+      },
+      "34093030035": {
+        "events": 2,
+        "active": true,
+        "tags": [
+          "Música",
+          "Cultural"
+        ],
+        "attendance": 6918
+      },
+      "34093030013": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Gastronomía"
+        ],
+        "attendance": 521
+      },
+      "34093030012": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Gastronomía"
+        ],
+        "attendance": 1046
+      },
+      "34093030039": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Cultural",
+          "Religioso",
+          "Música"
+        ],
+        "attendance": 2767
+      },
+      "34093030008": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Música"
+        ],
+        "attendance": 413
+      },
+      "34093030027": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cultural"
+        ],
+        "attendance": 425
+      },
+      "34093030017": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Música",
+          "Cultural",
+          "Religioso"
+        ],
+        "attendance": 1479
+      },
+      "34093030028": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Fiesta"
+        ],
+        "attendance": 3503
+      },
+      "34093030020": {
+        "events": 3,
+        "active": true,
+        "tags": [
+          "Música",
+          "Mercado"
+        ],
+        "attendance": 1119
+      },
+      "34093030029": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cultural"
+        ],
+        "attendance": 1892
+      },
+      "34093030033": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cultural"
+        ],
+        "attendance": 680
+      },
+      "34093030010": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cine"
+        ],
+        "attendance": 450
+      },
+      "34093030901": {
+        "events": 2,
+        "active": true,
+        "tags": [
+          "Gastronomía",
+          "Música"
+        ],
+        "attendance": 1201
+      },
+      "34093030009": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cine"
+        ],
+        "attendance": 213
+      },
+      "34093030042": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cultural"
+        ],
+        "attendance": 789
+      },
+      "34093030038": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Mercado"
+        ],
+        "attendance": 565
+      },
+      "34093030036": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cultural"
+        ],
+        "attendance": 796
+      },
+      "34093030025": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Música"
+        ],
+        "attendance": 493
+      },
+      "34093030037": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Gastronomía"
+        ],
+        "attendance": 666
+      },
+      "34093030041": {
+        "events": 1,
+        "active": false,
+        "tags": [
+          "Cine"
+        ],
+        "attendance": 246
+      }
+    },
+    "byProvince": {
+      "34093000000": {
+        "events": 65,
+        "municipalities": 29,
+        "participants": 263789,
+        "interest": 99,
+        "tags": [
+          "Cultural",
+          "Gastronómico",
+          "Histórico"
+        ],
+        "zoomTo": 9,
+        "centerTo": [
+          38,
+          -1.48
+        ]
+      }
+    }
+  }
+}

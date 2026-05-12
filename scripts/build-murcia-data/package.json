@@ -1,0 +1,14 @@
+{
+  "name": "build-murcia-data",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generates GeoJSON and synthetic event data for the Pulso Murcia demo.",
+  "scripts": {
+    "geo": "node build-geo.js",
+    "events": "node build-events.js",
+    "all": "node build-geo.js && node build-events.js"
+  },
+  "dependencies": {
+    "topojson-client": "^3.1.0"
+  }
+}

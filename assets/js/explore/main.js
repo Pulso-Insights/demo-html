@@ -10,6 +10,11 @@
 
 const Explore = (() => {
 
+  // Region overrides via window.PULSO_CONFIG; defaults match the BCN demo.
+  const _CFG = (typeof window !== 'undefined' && window.PULSO_CONFIG) || {};
+  const _URL = _CFG.dataUrls || {};
+  const _MAP = _CFG.map      || {};
+
   // ---- Basemap ----
   const BASEMAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
 
@@ -44,8 +49,9 @@ const Explore = (() => {
     'Mercat':      'mercat',
   };
 
-  const CENTER_REGIONAL = [1.50, 41.60]; // Catalonia center [lng, lat]
-  const ZOOM_INITIAL    = 8;
+  const CENTER_REGIONAL = _MAP.centerRegional || [1.50, 41.60]; // [lng, lat]
+  const ZOOM_INITIAL    = _MAP.zoomRegional   || 8;
+  const STAR_EVENT_ID   = _CFG.starEventId    || 'platillos-2025';
   const ZOOM_MIN        = 6;
   const ZOOM_MAX        = 18;
 
@@ -73,7 +79,7 @@ const Explore = (() => {
     });
 
     try {
-      const resp = await fetch('assets/data/platillos-merchants.json');
+      const resp = await fetch(_URL.starMerchants || 'assets/data/platillos-merchants.json');
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
 
@@ -88,27 +94,32 @@ const Explore = (() => {
 
       // Preload isochrone GeoJSON files
       try {
-        const isoResp = await fetch('assets/data/platillos-isochrones.json');
+        const isoResp = await fetch(_URL.starIsochrones || 'assets/data/platillos-isochrones.json');
         if (isoResp.ok) {
           const isoGeo = await isoResp.json();
           const feat5min = isoGeo.features.find(
             f => f.properties.mode === 'walk' && f.properties.minutes === 5
           );
-          if (feat5min) isochroneData['platillos-2025'] = [feat5min];
+          if (feat5min) isochroneData[STAR_EVENT_ID] = [feat5min];
         }
       } catch (_) {}
 
       await HierarchyLayer.init(map);
       EventZoneLayer.init(map, isochroneData);
+      // Optional events pin layer (only present in regions that ship events-*.json)
+      if (typeof EventsOverlay !== 'undefined') {
+        await EventsOverlay.init(map);
+      }
 
       // Wire EventZoneLayer zone selection → auto-focus on activitat entry
       EventZoneLayer.onSelect(zone => {
         if (zone.realEventId) pendingFocusEventId = zone.realEventId;
       });
 
-      // Start in regional mode — fit tight to the 4 Catalan provinces
+      // Start in regional mode — fit tight to all provinces in the dataset
       HierarchyLayer.setMode('regional');
       HierarchyLayer.fitToLevel('regional');
+      if (typeof EventsOverlay !== 'undefined') EventsOverlay.show();
 
       document.getElementById('map-loading').classList.add('hidden');
     } catch (err) {
@@ -188,9 +199,12 @@ const Explore = (() => {
 
   function onModeChange(from, to) {
     if (focusTransitioning) return;
+    const overlay = (typeof EventsOverlay !== 'undefined') ? EventsOverlay : null;
+
     if (to === 'activitat') {
       HierarchyLayer.hide();
       EventZoneLayer.hide();
+      overlay?.hide();
       if (!merchantsLoaded) {
         loadMerchants();
         merchantsLoaded = true;
@@ -205,12 +219,14 @@ const Explore = (() => {
       hideSidebar();
       HierarchyLayer.setGhost('municipal');
       EventZoneLayer.show();
+      overlay?.hide();
       showSidebar('zones');
 
     } else {
       if (from === 'activitat') _hideMerchants();
       if (from === 'zones') { EventZoneLayer.hide(); hideSidebar(); }
       HierarchyLayer.setMode(to);
+      overlay?.show();
     }
   }
 

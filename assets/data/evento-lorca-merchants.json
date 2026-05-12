@@ -1,0 +1,392 @@
+{
+  "events": [
+    {
+      "id": "semana-santa-lorca-2026",
+      "name": "Semana Santa de Lorca",
+      "edition": "2026",
+      "dates": {
+        "start": "2026-03-29",
+        "end": "2026-04-05"
+      },
+      "location": "Lorca",
+      "price": "Acceso libre",
+      "description": "Declarada de Interés Turístico Internacional. Procesiones bíblico-pasionales del Paso Azul y Paso Blanco, con bordados únicos en el mundo.",
+      "icon": "church",
+      "color": "#4338CA",
+      "merchants": [
+        {
+          "id": 1,
+          "name": "Colegiata de San Patricio",
+          "address": "Pl. de España, s/n",
+          "coordinates": {
+            "lat": 37.67133,
+            "lng": -1.69677
+          },
+          "dish": {
+            "name": "Procesión",
+            "description": "Punto de salida y llegada de cofradías.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural",
+            "interes-nacional"
+          ],
+          "stats": {
+            "visits": 5177,
+            "routes": 2113
+          }
+        },
+        {
+          "id": 2,
+          "name": "Iglesia de Santiago",
+          "address": "Pl. de Santiago, 6",
+          "coordinates": {
+            "lat": 37.67257,
+            "lng": -1.69553
+          },
+          "dish": {
+            "name": "Procesión",
+            "description": "Punto de salida y llegada de cofradías.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural"
+          ],
+          "stats": {
+            "visits": 7779,
+            "routes": 3492
+          }
+        },
+        {
+          "id": 3,
+          "name": "Iglesia de San Mateo",
+          "address": "Pl. de San Mateo, 2",
+          "coordinates": {
+            "lat": 37.67452,
+            "lng": -1.69845
+          },
+          "dish": {
+            "name": "Procesión",
+            "description": "Punto de salida y llegada de cofradías.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural"
+          ],
+          "stats": {
+            "visits": 2109,
+            "routes": 1058
+          }
+        },
+        {
+          "id": 4,
+          "name": "Iglesia del Carmen",
+          "address": "Pl. del Caño, s/n",
+          "coordinates": {
+            "lat": 37.66889,
+            "lng": -1.6991
+          },
+          "dish": {
+            "name": "Procesión",
+            "description": "Punto de salida y llegada de cofradías.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural"
+          ],
+          "stats": {
+            "visits": 4328,
+            "routes": 1805
+          }
+        },
+        {
+          "id": 5,
+          "name": "Iglesia de Santo Domingo",
+          "address": "Pl. del Cardenal Belluga",
+          "coordinates": {
+            "lat": 37.67098,
+            "lng": -1.6981
+          },
+          "dish": {
+            "name": "Procesión",
+            "description": "Punto de salida y llegada de cofradías.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural"
+          ],
+          "stats": {
+            "visits": 7755,
+            "routes": 2766
+          }
+        },
+        {
+          "id": 6,
+          "name": "Museo del Paso Azul (MASS)",
+          "address": "C. Nogalte, 7",
+          "coordinates": {
+            "lat": 37.67152,
+            "lng": -1.69605
+          },
+          "dish": {
+            "name": "Exposición",
+            "description": "Bordados, mantos, joyas y enseres procesionales.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "paso-azul",
+            "bordados"
+          ],
+          "stats": {
+            "visits": 4188,
+            "routes": 2255
+          }
+        },
+        {
+          "id": 7,
+          "name": "Museo del Paso Blanco (MUBBLA)",
+          "address": "C. Santo Domingo, 4",
+          "coordinates": {
+            "lat": 37.67075,
+            "lng": -1.69772
+          },
+          "dish": {
+            "name": "Exposición",
+            "description": "Bordados, mantos, joyas y enseres procesionales.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "paso-blanco",
+            "bordados"
+          ],
+          "stats": {
+            "visits": 2825,
+            "routes": 1250
+          }
+        },
+        {
+          "id": 8,
+          "name": "Plaza de España",
+          "address": "Pl. de España",
+          "coordinates": {
+            "lat": 37.67128,
+            "lng": -1.6969
+          },
+          "dish": {
+            "name": "Punto del recorrido",
+            "description": "Tramo del itinerario procesional.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "recorrido",
+            "centro"
+          ],
+          "stats": {
+            "visits": 10217,
+            "routes": 4614
+          }
+        },
+        {
+          "id": 9,
+          "name": "Avenida Juan Carlos I",
+          "address": "Av. Juan Carlos I",
+          "coordinates": {
+            "lat": 37.67541,
+            "lng": -1.69427
+          },
+          "dish": {
+            "name": "Tribuna oficial",
+            "description": "Asientos y palcos para presenciar el desfile.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "recorrido",
+            "tribuna-oficial"
+          ],
+          "stats": {
+            "visits": 10279,
+            "routes": 4129
+          }
+        },
+        {
+          "id": 10,
+          "name": "Castillo de Lorca",
+          "address": "Pa. del Castillo, s/n",
+          "coordinates": {
+            "lat": 37.67648,
+            "lng": -1.69968
+          },
+          "dish": {
+            "name": "Mirador",
+            "description": "Vista panorámica del casco histórico.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural",
+            "mirador"
+          ],
+          "stats": {
+            "visits": 7979,
+            "routes": 3813
+          }
+        },
+        {
+          "id": 11,
+          "name": "Plaza de Calderón",
+          "address": "Pl. de Calderón",
+          "coordinates": {
+            "lat": 37.66999,
+            "lng": -1.69722
+          },
+          "dish": {
+            "name": "Punto del recorrido",
+            "description": "Tramo del itinerario procesional.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "recorrido"
+          ],
+          "stats": {
+            "visits": 1833,
+            "routes": 846
+          }
+        },
+        {
+          "id": 12,
+          "name": "Iglesia de San Francisco",
+          "address": "C. Núñez de Arce, 1",
+          "coordinates": {
+            "lat": 37.67272,
+            "lng": -1.69789
+          },
+          "dish": {
+            "name": "Procesión",
+            "description": "Punto de salida y llegada de cofradías.",
+            "price": "Acceso libre"
+          },
+          "hours": {
+            "monday": "closed",
+            "tuesday": "closed",
+            "wednesday": "closed",
+            "thursday": "18:00-23:00",
+            "friday": "17:00-00:00",
+            "saturday": "17:00-00:00",
+            "sunday": "17:00-23:00"
+          },
+          "tags": [
+            "cultural",
+            "paso-azul"
+          ],
+          "stats": {
+            "visits": 8821,
+            "routes": 3665
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "total_visits_today": 18420,
+    "total_routes_today": 7680,
+    "current_explorers": 142
+  }
+}
