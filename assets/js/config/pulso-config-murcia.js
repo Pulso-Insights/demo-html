@@ -28,6 +28,7 @@ window.PULSO_CONFIG = {
   },
   "hierarchy": {
     "color": "#A06A4B",
+    "markerStyle": "none",
     "provinceDemo": {
       "34093000000": {
         "events": 65,

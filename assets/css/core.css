@@ -257,6 +257,97 @@
   overflow: visible !important;
 }
 
+/* ── Hierarchy pin (alternative to .rc card) ─────────────────
+   Activated via PULSO_CONFIG.hierarchy.markerStyle = 'pin'.
+   Used for province & municipality markers — small dot with a
+   hover-only label, no popup.
+   ──────────────────────────────────────────────────────────── */
+.rc-pin {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: rc-enter 0.5s var(--rc-ease) backwards;
+}
+.rc-pin-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--rc-tag-cultural);
+  border: 2.5px solid #fff;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.18),
+    0 2px 6px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s var(--rc-ease), box-shadow 0.2s ease;
+}
+.rc-pin[data-level="regional"] .rc-pin-dot {
+  width: 18px;
+  height: 18px;
+  border-width: 3px;
+}
+.rc-pin[data-events="0"] .rc-pin-dot {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(180, 180, 180, 0.7);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.rc-pin[data-accent="gastro"]   .rc-pin-dot { background: var(--rc-tag-gastro); }
+.rc-pin[data-accent="mercat"]   .rc-pin-dot { background: var(--rc-tag-mercat); }
+.rc-pin[data-accent="cultural"] .rc-pin-dot { background: var(--rc-tag-cultural); }
+.rc-pin[data-accent="festa"]    .rc-pin-dot { background: var(--rc-tag-festa); }
+
+.rc-pin:hover .rc-pin-dot {
+  transform: scale(1.28);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.22),
+    0 4px 12px rgba(0, 0, 0, 0.32);
+}
+
+.rc-pin-label {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translate(-50%, 4px);
+  background: var(--rc-surface);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid var(--rc-stroke);
+  border-radius: 8px;
+  padding: 7px 11px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--rc-text);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.22s var(--rc-ease);
+  box-shadow: 0 10px 28px -8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  letter-spacing: -0.005em;
+}
+.rc-pin-label strong { font-weight: 700; }
+.rc-pin-count {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--rc-text-dim);
+  letter-spacing: 0.02em;
+}
+.rc-pin-count--off {
+  font-style: italic;
+  opacity: 0.65;
+}
+.rc-pin:hover .rc-pin-label {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 /* ── Merchant mini-card (.rc--xs) states ─────────────────────
    The merchant card sits below the dot and mirrors the dot's
    state classes (set by explore/main.js).

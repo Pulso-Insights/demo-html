@@ -13,6 +13,11 @@ const HierarchyLayer = (() => {
   const _H   = _CFG.hierarchy || {};
   const _URL = _CFG.dataUrls   || {};
 
+  // 'card' (default): full info card per province/municipality.
+  // 'pin':            small dot marker with hover-only label.
+  // 'none':           no marker — only polygon fill/outline (clickable to flyTo).
+  const MARKER_STYLE = ['pin', 'none'].includes(_H.markerStyle) ? _H.markerStyle : 'card';
+
   let map  = null;
   let data = {};
 
@@ -296,6 +301,12 @@ const HierarchyLayer = (() => {
 
     _showLevelLayers(levelKey, false);
 
+    // No markers: only polygons. Polygons remain clickable (handler set in init).
+    if (MARKER_STYLE === 'none') {
+      console.log(`HierarchyLayer: showing ${levelKey} polygons only (markerStyle = 'none')`);
+      return;
+    }
+
     // Place cards at centroids, sorted by events desc for staggered animation
     const sorted = [...geojson.features]
       .filter(f => f.properties.centroid && (levelKey === 'regional' || f.properties.events > 0))
@@ -309,7 +320,9 @@ const HierarchyLayer = (() => {
 
       const wrapper = document.createElement('div');
       wrapper.className = 'rc-wrapper';
-      wrapper.innerHTML = buildCardHtml(p, levelKey, idx * 60);
+      wrapper.innerHTML = MARKER_STYLE === 'pin'
+        ? buildPinHtml(p, levelKey)
+        : buildCardHtml(p, levelKey, idx * 60);
 
       const marker = new maplibregl.Marker({
         element: wrapper,
@@ -318,7 +331,7 @@ const HierarchyLayer = (() => {
         .setLngLat([labelLng, labelLat])
         .addTo(map);
 
-      const card = wrapper.querySelector('.rc');
+      const card = wrapper.querySelector('.rc, .rc-pin');
       if (card) {
         cardElements.set(String(p.code), card);
 
@@ -545,6 +558,25 @@ const HierarchyLayer = (() => {
         ${summaryHtml}
         ${bodyHtml}
         ${hintHtml}
+      </div>`;
+  }
+
+  // Minimal alternative to .rc card — used when PULSO_CONFIG.hierarchy.markerStyle === 'pin'.
+  function buildPinHtml(p, level) {
+    const evtCount = p.events || 0;
+    const isLive   = evtCount > 0;
+    const accent   = pickAccent(p.tags);
+    const evtWord  = evtCount !== 1 ? STR.eventPlural : STR.event;
+    const countLabel = isLive
+      ? `<span class="rc-pin-count">${evtCount} ${evtWord}</span>`
+      : `<span class="rc-pin-count rc-pin-count--off">${STR.noActivity}</span>`;
+    return `
+      <div class="rc-pin" data-accent="${accent}" data-level="${level}" data-events="${evtCount}">
+        <span class="rc-pin-dot"></span>
+        <span class="rc-pin-label">
+          <strong>${p.name}</strong>
+          ${countLabel}
+        </span>
       </div>`;
   }
 
