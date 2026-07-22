@@ -23,7 +23,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/Marco-Labs/route-go/pkg/models"
+	"github.com/pulso-codes/route-go/pkg/models"
 )
 
 type gtfsStop struct {
